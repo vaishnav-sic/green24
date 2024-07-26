@@ -16,6 +16,6 @@ info:
 
   contacts: 
     - "Phone: +91 9921055678"
-    - "Mail: contact@example.com"
+    - "Mail: info@green24.in"
     - "Address: Sector 10, Mata Amritanandamayi Marg, Nerul, New Mumbai, Maharashtra - 400706"
 ---

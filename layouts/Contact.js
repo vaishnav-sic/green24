@@ -245,7 +245,7 @@ const Contact = ({ data }) => {
   const { contact_form_action } = config.params;
 
   const contactNumber = "+91 9921055678";
-  const email = "contact@example.com";
+  const email = "info@green24.in";
   const whatsappQR = "/images/WhatsappQRSandip.png";
   const mapLocation = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d942.8886478114555!2d73.01705898830159!3d19.03933885766353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAyJzIwLjEiTiA3M8KwMDEnMDIuNiJF!5e0!3m2!1sen!2sin!4v1721987928452!5m2!1sen!2sin";
 
