@@ -1,7 +1,9 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Welcome to Your Ultimate Gardening Destination
+  # title: Let us solve your critical website development challenges
+  # content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  content: Grow Your Green Thumb with Us!
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
