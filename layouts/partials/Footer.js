@@ -50,7 +50,7 @@ const Footer = () => {
           <p className="site-footer__copy" style={{ display: "flex", alignItems: "center", margin: "0" }}>
             &copy; सर्वहक्कस्वाधीन २०२४ &nbsp;&nbsp;{" "}
               <a href="https://www.swasamvedya.com/" target="_blank">
-                <img src="/images/SIC_Logo.jpg" alt="Logo"  style={{height:"50px"}}/>
+                <img src="/images/SIC_LogoName.svg" alt="Logo"  style={{height:"50px"}}/>
               </ a>
               &nbsp;&nbsp; द्वारे ❤ प्रेमपूर्वक विकसित  
           </p>
