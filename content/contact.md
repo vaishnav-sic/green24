@@ -5,7 +5,7 @@ draft: false
 info: 
   title: Why You Should Reach Out to Us!
   description: |
-    Whether you have questions, need assistance, or just want to say hello, we're here for you! Our dedicated team is ready to provide the support and information you need. <br>
+    Need help or have a question? We're here for you! <br>
     Contact us to:
     <br>
     - Get expert advice and personalized solutions.<br>
@@ -16,6 +16,6 @@ info:
 
   contacts: 
     - "Phone: +91 9921055678"
-    - "Mail: (mailto:example@gogreen24.com)"
-    - "Address: "
+    - "Mail: contact@example.com"
+    - "Address: Sector 10, Mata Amritanandamayi Marg, Nerul, New Mumbai, Maharashtra - 400706"
 ---
