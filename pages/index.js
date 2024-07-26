@@ -28,7 +28,7 @@ const Home = ({ frontmatter }) => {
         >
           <div className="whatsapp-icon" style={{position:"fixed", right:"20px", bottom:"20px", zIndex:"10000"}}>
             <a
-              href="https://api.whatsapp.com/send?phone=918087144098"
+              href="https://api.whatsapp.com/send?phone=919921055678"
               target="_blank"
               rel="noopener noreferrer"
             >

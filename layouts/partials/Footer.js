@@ -48,9 +48,9 @@ const Footer = () => {
         <div className="border-t border-border py-6" style={{ display: "flex", justifyContent: "center", alignItems: "center", background:"#f7f7f7", color:"black" }}>
           {/* {markdownify(copyright, "p", "text-sm text-center")} */}
           <p className="site-footer__copy" style={{ display: "flex", alignItems: "center", margin: "0" }}>
-            &copy; सर्वहक्कस्वाधीन 2024&nbsp;&nbsp;{" "}
+            &copy; सर्वहक्कस्वाधीन २०२४ &nbsp;&nbsp;{" "}
               <a href="https://www.swasamvedya.com/" target="_blank">
-                <img src="/images/SIC_Logo.jpg" alt="Logo"  style={{height:"50px"}}/>
+                <img src="/images/SIC_LogoName.svg" alt="Logo"  style={{height:"50px"}}/>
               </ a>
               &nbsp;&nbsp; द्वारे ❤ प्रेमपूर्वक विकसित  
           </p>
