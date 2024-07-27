@@ -4,21 +4,7 @@ layout: faq
 draft: false
 intro: "Green24, we are passionate about transforming your outdoor spaces into lush, vibrant gardens that inspire and rejuvenate. With years of expertise in horticulture and landscape design, our dedicated team of gardening professionals is committed to providing top-notch services tailored to meet your unique needs. From routine maintenance and seasonal planting to complete garden makeovers, we use sustainable practices and high-quality materials to ensure your garden thrives all year round. Join us at Green24 and let us help you create a beautiful, sustainable garden that you can enjoy and be proud of."
 intro_image: "/images/faq-intro.jpg"
-faqs:
-- title: Will updates also be free?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
-- title: Discounts for students and Non Profit Organizations?
-  answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-- title: I need something unique, Can you make it?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
-- title: Is there any documentation and support?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
-- title: Any refunds?
-  answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-- title: What is a product key?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
-section_title: ""
-section_subtitle: ""
+
 section_items:
   - title: Our Approach
     description: At Green24, we believe in a holistic approach to gardening. From the initial consultation to the final touches, our process is designed to ensure your garden not only looks beautiful but thrives sustainably. We use eco-friendly materials and techniques to create gardens that are both stunning and environmentally responsible.
