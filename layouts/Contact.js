@@ -250,15 +250,15 @@ const Contact = ({ data }) => {
   const mapLocation = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d942.8886478114555!2d73.01705898830159!3d19.03933885766353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAyJzIwLjEiTiA3M8KwMDEnMDIuNiJF!5e0!3m2!1sen!2sin!4v1721987928452!5m2!1sen!2sin";
 
   return (
-    <section className="section">
-      <div className="container mx-auto p-8">
-        <section className="contact-info-section p-8 rounded-lg mb-8 border border-gray-300 shadow-xl">
-          <div className="container mx-auto flex flex-col md:flex-row justify-around items-center w-full">
+    <section className="section w-full px-4">
+      <div className="w-full px-4 py-8">
+        <section className="contact-info-section w-full px-4 py-8 rounded-lg mb-8 border border-gray-300 shadow-xl">
+          <div className="flex flex-col md:flex-row justify-around items-center text-center w-full">
             <div className="contact-item mb-8 md:mb-0">
               <h4 className="font-bold text-xl mb-2">Call</h4>
               <p>{contactNumber}</p>
             </div>
-            <div className="contact-item mb-8 md:mb-0">
+            <div className="contact-item mb-8 md:mb-0 md:mx-4">
               <h4 className="font-bold text-xl mb-2">Email ID</h4>
               <p>{email}</p>
             </div>
@@ -270,8 +270,8 @@ const Contact = ({ data }) => {
         </section>
 
         {markdownify(title, "h1", "text-center font-bold text-4xl mb-8")}
-        <div className="section grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="content flex flex-col justify-start items-start p-8 border border-gray-300 rounded-lg shadow-xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+          <div className="content flex flex-col justify-start items-start p-4 bg-green-50 border border-gray-300 rounded-lg shadow-2xl w-full">
             {markdownify(info.title, "h4", "text-2xl font-bold mb-4 text-gray-800 text-left")}
             {markdownify(info.description, "p", "mt-4 text-gray-700 text-left")}
             <ul className="contact-list mt-5 space-y-2 list-none pl-0">
@@ -283,9 +283,9 @@ const Contact = ({ data }) => {
             </ul>
           </div>
 
-          <div className="map-container flex justify-center items-center p-8 border border-gray-300 rounded-lg shadow-xl">
+          <div className="map-container flex justify-center items-center p-4 bg-green-50 border border-gray-300 rounded-lg shadow-2xl w-full">
             <div className="w-full">
-              <h4 className="font-bold text-xl mb-2 text-center">Our Location</h4>
+              <h4 className="font-bold text-2xl mb-4 text-center">Our Location</h4>
               <iframe 
                 src={mapLocation}
                 width="100%"
@@ -305,4 +305,3 @@ const Contact = ({ data }) => {
 };
 
 export default Contact;
-
