@@ -1,23 +1,32 @@
 ---
-title: Frequently Asked Questions
+title: ABOUT US
 layout: faq
 draft: false
+intro: "Green24, we are passionate about transforming your outdoor spaces into lush, vibrant gardens that inspire and rejuvenate. With years of expertise in horticulture and landscape design, our dedicated team of gardening professionals is committed to providing top-notch services tailored to meet your unique needs. From routine maintenance and seasonal planting to complete garden makeovers, we use sustainable practices and high-quality materials to ensure your garden thrives all year round. Join us at Green24 and let us help you create a beautiful, sustainable garden that you can enjoy and be proud of."
+intro_image: "/images/faq-intro.jpg"
 faqs:
 - title: Will updates also be free?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
-
+  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
 - title: Discounts for students and Non Profit Organizations?
-  answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus [link](https://www.example.com) ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
-
+  answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 - title: I need something unique, Can you make it?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
-
+  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
 - title: Is there any documentation and support?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
-
+  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
 - title: Any refunds?
-  answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus [link](https://www.example.com) ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
-
+  answer: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
 - title: What is a product key?
-  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+  answer: Lorem, [link](https://www.example.com) ipsum dolor sit amet consectetur adipisicing elit.
+section_title: ""
+section_subtitle: ""
+section_items:
+  - title: Our Approach
+    description: At Green24, we believe in a holistic approach to gardening. From the initial consultation to the final touches, our process is designed to ensure your garden not only looks beautiful but thrives sustainably. We use eco-friendly materials and techniques to create gardens that are both stunning and environmentally responsible.
+    icon: "M22 12h-4l-3 9L9 3l-3 9H2"
+  - title: Success Stories
+    description: Over the years, Green24 has transformed countless outdoor spaces into vibrant, flourishing gardens. From small urban courtyards to large rural estates, our projects showcase our versatility and commitment to excellence. Check out some of our favorite transformations and hear from our satisfied clients.
+    icon: "M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"
+  - title: Future Goal
+    description: Looking ahead, Green24 is committed to expanding our services and continuing to innovate in the field of sustainable gardening. We are excited to introduce new eco-friendly products and techniques, and to further our community engagement efforts. Our goal is to make beautiful, sustainable gardens accessible to everyone.
+    icon: "M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"
 ---
