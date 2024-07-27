@@ -271,7 +271,7 @@ const Contact = ({ data }) => {
 
         {markdownify(title, "h1", "text-center font-bold text-4xl mb-8")}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          <div className="content flex flex-col justify-start items-start p-4 bg-green-50 border border-gray-300 rounded-lg shadow-2xl w-full">
+          <div className="content flex flex-col justify-start items-start p-4 bg-theme-light border border-gray-300 rounded-lg shadow-2xl w-full">
             {markdownify(info.title, "h4", "text-2xl font-bold mb-4 text-gray-800 text-left")}
             {markdownify(info.description, "p", "mt-4 text-gray-700 text-left")}
             <ul className="contact-list mt-5 space-y-2 list-none pl-0">
@@ -283,7 +283,7 @@ const Contact = ({ data }) => {
             </ul>
           </div>
 
-          <div className="map-container flex justify-center items-center p-4 bg-green-50 border border-gray-300 rounded-lg shadow-2xl w-full">
+          <div className="map-container flex justify-center items-center p-4 bg-theme-light border border-gray-300 rounded-lg shadow-2xl w-full">
             <div className="w-full">
               <h4 className="font-bold text-2xl mb-4 text-center">Our Location</h4>
               <iframe 
