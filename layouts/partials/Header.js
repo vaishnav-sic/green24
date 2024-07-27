@@ -1,9 +1,11 @@
 import Logo from "@components/Logo";
+// import Logo1 from "@components/Logo1";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
+import Image from "next/image";
 
 const Header = () => {
   //router
@@ -24,7 +26,13 @@ const Header = () => {
       <nav className="navbar container">
         {/* logo */}
         <div className="order-0">
-          <Logo src={logo} />
+          {/* <Logo src={logo} /> */}
+          <Image
+                src={config.site.logo1}
+                width={config.site.logo1_width}
+                height={config.site.logo1_height}
+                alt=""
+              />
         </div>
 
         {/* navbar toggler */}

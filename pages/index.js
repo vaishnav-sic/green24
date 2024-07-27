@@ -49,8 +49,16 @@ const Home = ({ frontmatter }) => {
           <div className="container">
             <div className="row text-center">
               <div className="mx-auto lg:col-10">
-                <h1 className="font-primary font-bold" style={{color:"#f79915", textShadow: "3px 2px 4px rgba(0, 0, 0, 1.5)"}}>{banner.title}</h1>
-                <p className="mt-4" style={{color:'navy', fontWeight:'bold', fontSize:'20px', fontStyle:'italic'}}>{markdownify(banner.content)}</p>
+                <h1 className="font-primary font-bold" style={{color:"#f79915", textShadow: "3px 2px 4px rgba(0, 0, 0, 1.5)", animation: "bounceIn 2s ease-in-out 0s 1 normal forwards"}}>{banner.title}</h1>
+                <p className="mt-4" style={{color:'navy', fontWeight:'bold', fontSize:'20px', fontStyle:'italic', animation: "bounceIn 2s ease-in-out 0s 1 normal forwards"}}>{markdownify(banner.content)}</p>
+                <style jsx>{`
+                  @keyframes bounceIn {
+                      0% { transform: scale(0); opacity: 0; }
+                      60% { transform: scale(1.1); opacity: 1; }
+                      80% { transform: scale(0.9); }
+                      100% { transform: scale(1); }
+                  }
+                `}</style>
                 {banner.button.enable && (
                   <Link
                     className="btn btn-primary mt-4"
