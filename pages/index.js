@@ -108,9 +108,23 @@ const Home = ({ frontmatter }) => {
                     {/* Slides */}
                     {service?.images.map((slide, index) => (
                       <SwiperSlide key={index}>
-                        <Image src={slide} alt="" width={600} height={500} />
+                        <Image src={slide} alt="" width={600} height={500} style={{borderRadius:"60px 0px",  transition: "transform 0.5s ease-in-out",
+                         animation: "zoomInOut 5s infinite"}}   />
                       </SwiperSlide>
                     ))}
+                    <style jsx>{`
+                     @keyframes zoomInOut {
+                     0% {
+                     transform: scale(1);
+                     }
+                     50% {
+                     transform: scale(1.2);
+                     }
+                     100% {
+                     transform: scale(1);
+                     }
+                     }
+                     `}</style>
                   </Swiper>
                 </div>
 
@@ -121,7 +135,7 @@ const Home = ({ frontmatter }) => {
                   }`}
                 >
                   <h2 className="font-bold leading-[40px]">{service?.title}</h2>
-                  <p className="mt-4 mb-2">{service?.content}</p>
+                  <p className="mt-4 mb-2" style={{ textAlign: 'justify' }}>{service?.content}</p>
                   {service.button.enable && (
                     <Link
                       href={service?.button.link}
