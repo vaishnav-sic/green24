@@ -3,7 +3,10 @@
     "title": "Bigspring Light Nextjs",
     "base_url": "/",
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "logo1": "/images/Green24.svg",
+    "logo": "/images/Green241.svg",
+    "logo1_width": "120",
+    "logo1_height": "45",
     "logo_width": "200",
     "logo_height": "48",
     "logo_text": "Bigspring Light"
@@ -17,7 +20,7 @@
 
   "nav_button": {
     "enable": true,
-    "label": "Contact",
+    "label": "Contact Us",
     "link": "/contact"
   },
 

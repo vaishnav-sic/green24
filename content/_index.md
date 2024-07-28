@@ -11,26 +11,26 @@ banner:
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title:   Our Specialities 
   features:
-  - name: "Clean Code"
-    icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
-    icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "24h Service"
-    icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Value for Money"
-    icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Faster Response"
-    icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Cloud Support"
-    icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "High Quality Plants"
+    icon: "/images/high quality.png"
+    content: "Nurseries ensure plants are healthy,well-rooted and ready to thrive in new environments"
+  - name: "Expert Knowledge"
+    icon: "/images/expert.png"
+    content: "Staff at nurseries are knowledgeable about plant care,growth requirements, and best practices for different species"
+  - name: "Wide Selection"
+    icon: "/images/wide.png"
+    content: "Nurseries offer a diverse range of plants ,including those not typically available at general retail stores"
+  - name: "Sustainability"
+    icon: "/images/sustainable gardening.png"
+    content: "Many nurseries focus on sustinable practices ,such as using organic growing methods and promoting native plant species"
+  - name: "Customized Growing Conditions"
+    icon: "/images/customized.png"
+    content: "Providing optimal conditionsfor plants that require less direct sunlight"
+  - name: "Greenhouses"
+    icon: "/images/greenhouse.png"
+    content: "Using controlled environments to grow plants year-round ,regardless of external weather conditions."
 
 # services
 services:
