@@ -250,8 +250,8 @@ const Contact = ({ data }) => {
   const mapLocation = "https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d942.8886478114555!2d73.01705898830159!3d19.03933885766353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTnCsDAyJzIwLjEiTiA3M8KwMDEnMDIuNiJF!5e0!3m2!1sen!2sin!4v1721987928452!5m2!1sen!2sin";
 
   return (
-    <section className="section w-full px-4">
-      <div className="w-full px-4 py-8">
+    <section className="section w-full px-12">
+      <div className="w-full px-12 py-16">
         <section className="contact-info-section w-full px-4 py-8 rounded-lg mb-8 border border-gray-300 shadow-xl">
           <div className="flex flex-col md:flex-row justify-around items-center text-center w-full">
             <div className="contact-item mb-8 md:mb-0">
