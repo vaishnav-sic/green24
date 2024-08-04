@@ -15,7 +15,7 @@ const Home = ({ frontmatter }) => {
   const { banner, feature, services, workflow, call_to_action } = frontmatter;
   const { title } = config.site;
 
-  return (  
+  return (
     <Base title={title}>
       <div className="content">
         {/* Banner */}
@@ -82,7 +82,7 @@ const Home = ({ frontmatter }) => {
         </section>
 
         {/* Features */}
-        <section className="section bg-theme-light bg-cover">
+        <section className="section bg-theme-light">
           <div className="container">
             <div className="text-center">
               <h2>{markdownify(feature.title)}</h2>
