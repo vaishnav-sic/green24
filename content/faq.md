@@ -5,6 +5,28 @@ draft: false
 intro: "Green24, we are passionate about transforming your outdoor spaces into lush, vibrant gardens that inspire and rejuvenate. With years of expertise in horticulture and landscape design, our dedicated team of gardening professionals is committed to providing top-notch services tailored to meet your unique needs. From routine maintenance and seasonal planting to complete garden makeovers, we use sustainable practices and high-quality materials to ensure your garden thrives all year round. Join us at Green24 and let us help you create a beautiful, sustainable garden that you can enjoy and be proud of."
 intro_image: "/images/faq-intro.jpg"
 
+feature: 
+  title:   Our Specialities 
+  features:
+  - name: "High Quality Plants"
+    icon: "/images/high quality.png"
+    content: "Nurseries ensure plants are healthy,well-rooted and ready to thrive in new environments"
+  - name: "Expert Knowledge"
+    icon: "/images/expert.png"
+    content: "Staff at nurseries are knowledgeable about plant care,growth requirements, and best practices for different species"
+  - name: "Wide Selection"
+    icon: "/images/wide.png"
+    content: "Nurseries offer a diverse range of plants ,including those not typically available at general retail stores"
+  - name: "Sustainability"
+    icon: "/images/sustainable gardening.png"
+    content: "Many nurseries focus on sustinable practices ,such as using organic growing methods and promoting native plant species"
+  - name: "Customized Growing Conditions"
+    icon: "/images/customized.png"
+    content: "Providing optimal conditionsfor plants that require less direct sunlight"
+  - name: "Greenhouses"
+    icon: "/images/greenhouse.png"
+    content: "Using controlled environments to grow plants year-round ,regardless of external weather conditions."
+
 section_items:
   - title: Our Approach
     description: At Green24, we believe in a holistic approach to gardening. From the initial consultation to the final touches, our process is designed to ensure your garden not only looks beautiful but thrives sustainably. We use eco-friendly materials and techniques to create gardens that are both stunning and environmentally responsible.
