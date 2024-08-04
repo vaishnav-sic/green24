@@ -14,7 +14,8 @@ import GalleryImage9 from "../public/images/gallery9.jpg";
 
 function Faq({ data }) {
   const { frontmatter } = data;
-  const { title, intro, intro_image, section_items } = frontmatter;
+  const {title, intro, intro_image, section_items,feature } = frontmatter;
+
 
   console.log("Data received: ", data); // Debugging: Check if data is received correctly
 
@@ -33,36 +34,70 @@ function Faq({ data }) {
       </div>
     </div>
   );
+ 
 
   // Card Section
-  const CardSection = () => (
-    <section className="body-font bg-theme-white border-t border-gray-200 text-gray-700">
-      <div className="container mx-auto bg-theme-light px-5 py-24">
-        <div className="-m-4 flex flex-wrap">
-          {section_items.map((item, index) => (
-            <div key={index} className="p-4 md:w-1/3">
-              <div className="flex h-full flex-col rounded-lg bg-gray-100 p-8 shadow-lg">
-                <div className="mb-3 flex items-center justify-center">
-                  {markdownify(
-                    item.title,
-                    "h2",
-                    "text-gray-900 text-xl title-font font-bold text-center text-indigo-600"
-                  )}
-                </div>
-                <div className="flex-grow">
-                  {markdownify(
-                    item.description,
-                    "p",
-                    "leading-relaxed text-base"
-                  )}
-                </div>
-              </div>
+  const CardSection = () => //(
+    // <section className="body-font bg-theme-white border-t border-gray-200 text-gray-700">
+    //   <div className="container mx-auto bg-theme-light px-5 py-24">
+    //     <div className="-m-4 flex flex-wrap">
+    //       {section_items.map((item, index) => (
+    //         <div key={index} className="p-4 md:w-1/3">
+    //           <div className="flex h-full flex-col rounded-lg bg-gray-100 p-8 shadow-lg">
+    //             <div className="mb-3 flex items-center justify-center">
+    //               {markdownify(
+    //                 item.title,
+    //                 "h2",
+    //                 "text-gray-900 text-xl title-font font-bold text-center text-indigo-600"
+    //               )}
+    //             </div>
+    //             <div className="flex-grow">
+    //               {markdownify(
+    //                 item.description,
+    //                 "p",
+    //                 "leading-relaxed text-base"
+    //               )}
+    //             </div>
+    //           </div>
+    //         </div>
+    //       ))}
+    //     </div>
+    //   </div>
+    // </section>
+  //);
+(
+  
+  <section className="section bg-theme-light bg-cover w-full mx-0">
+          <div className="container">
+            <div className="text-center">
+              <h2>{markdownify(feature.title)}</h2>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+            <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+              {feature.features.map((item, i) => (
+                <div
+                  className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
+                  key={`feature-${i}`}
+                >
+                  {item.icon && (
+                    <Image
+                      className="mx-auto"
+                      src={item.icon}
+                      width={30}
+                      height={30}
+                      alt=""
+                    />
+                  )}
+                  <div className="mt-4">
+                    {markdownify(item.name, "h3", "h5")}
+                    <p className="mt-3">{item.content}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+       );
+
 
   // Gallery Section
   const GallerySection = () => {
