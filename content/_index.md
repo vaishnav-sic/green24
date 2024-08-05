@@ -48,7 +48,7 @@ services:
   - title: "Gardening is a way of showing that you believe in tomorrow."
     content:  "Gardening is a way of showing that you believe in tomorrow encapsulates the optimism, patience, and nurturing spirit inherent in cultivating a garden. It underscores the profound connection between gardening and faith in the future, affirming that through caring for plants, individuals express their hope for growth, renewal, and the beauty yet to come,"
     images: 
-      - "/images/G9.jpg"
+      - "/images/G15 new.jpg"
     button:
       # enable: true
       # label: Check it out
@@ -60,7 +60,7 @@ services:
 
 
     images:
-      - "/images/G5.jpeg"
+      - "/images/G5 new.jpg"
       # - "/images/service-slide-2.png"
       # - "/images/service-slide-3.png"
     button:
@@ -71,7 +71,7 @@ services:
   - title: "Garden is a friend you can visit anytime."
     content:  "Garden is a friend you can visit anytime captures the enduring companionship, beauty, and therapeutic benefits that gardens offer. It highlights the profound relationship between humans and nature, emphasizing the garden's role not just as a place of cultivation, but as a source of emotional well-being, inspiration, and connection to the natural world."
     images:
-      - "/images/G1.jpg"
+      - "/images/G1 new.jpg"
       # - "/images/service-slide-2.png"
       # - "/images/service-slide-3.png"
     button:
