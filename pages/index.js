@@ -3,7 +3,7 @@ import Base from "@layouts/Baseof";
 import Cta from "@layouts/components/Cta";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
-import Background from "../public/images/Background.png";
+import Background from "../public/images/Background.jpg";
 import Link from "next/link";
 import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -22,7 +22,7 @@ const Home = ({ frontmatter }) => {
         <section
           className="section pb-[50px] bg-cover bg-center"
           style={{ 
-            backgroundImage: `url(${Background.src})`,
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${Background.src})`,
             height: '700px' 
           }}
         >
@@ -49,8 +49,8 @@ const Home = ({ frontmatter }) => {
           <div className="container">
             <div className="row text-center">
               <div className="mx-auto lg:col-10">
-                <h1 className="font-primary font-bold" style={{color:"#f79915", textShadow: "3px 2px 4px rgba(0, 0, 0, 1.5)", animation: "bounceIn 2s ease-in-out 0s 1 normal forwards"}}>{banner.title}</h1>
-                <p className="mt-4" style={{color:'navy', fontWeight:'bold', fontSize:'20px', fontStyle:'italic', animation: "bounceIn 2s ease-in-out 0s 1 normal forwards"}}>{markdownify(banner.content)}</p>
+                <h1 className="font-primary font-bold" style={{color:"white", animation: "bounceIn 2s ease-in-out 0s 1 normal forwards"}}>{banner.title}</h1>
+                <p className="mt-4" style={{color:'#02fc68', fontWeight:'bold', fontSize:'20px', fontStyle:'italic', animation: "bounceIn 2s ease-in-out 0s 1 normal forwards"}}>{markdownify(banner.content)}</p>
                 <style jsx>{`
                   @keyframes bounceIn {
                       0% { transform: scale(0); opacity: 0; }
@@ -113,80 +113,41 @@ const Home = ({ frontmatter }) => {
         </section>
 
         {/* services */}
-        {services.map((service, index) => {
-          const isOdd = index % 2 > 0;
-          return (
-            <section
-              key={`service-${index}`}
-              className={`section ${isOdd && "bg-theme-light"}`}
-            >
-              <div className="container">
-                <div className="items-center gap-8 md:grid md:grid-cols-2">
-                  {/* Carousel */}
-                  <div className={`service-carousel ${!isOdd && "md:order-2"}`}>
-                    <Swiper
-                      modules={[Autoplay, Pagination]}
-                      pagination={
-                        service.images.length > 1 ? { clickable: true } : false
-                      }
-                      autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                      }}
-                      init={service?.images > 1 ? false : true}
-                    >
-                      {/* Slides */}
-                    {service?.images.map((slide, index) => (
-                      <SwiperSlide key={index}>
-                        <Image src={slide} alt="" width={600} height={500} style={{borderRadius:"60px 0px",  transition: "transform 0.5s ease-in-out",
-                         animation: "zoomInOut 5s infinite"}}   />
-                      </SwiperSlide>
-                    ))}
-                    <style jsx>{`
-                     @keyframes zoomInOut {
-                     0% {
-                     transform: scale(1);
-                     }
-                     50% {
-                     transform: scale(1.2);
-                     }
-                     100% {
-                     transform: scale(1);
-                     }
-                     }
-                     `}</style>
-                  </Swiper>
-                </div>
-
-                  {/* Content */}
-                  <div
-                    className={`service-content mt-5 md:mt-0 ${
-                      !isOdd && "md:order-1"
-                    }`}
-                  >
-                    <h2 className="font-bold leading-[40px]">{service?.title}</h2>
-                    <p className="mt-4 mb-2" style={{ textAlign: 'justify' }}>{service?.content}</p>
-                    {service.button.enable && (
-                      <Link
-                        href={service?.button.link}
-                        className="cta-link inline-flex items-center text-primary"
-                      >
-                        {service?.button.label}
-                        <Image
-                          className="ml-1"
-                          src="/images/arrow-right.svg"
-                          width={18}
-                          height={14}
-                          alt="arrow"
-                        />
-                      </Link>
-                    )}
-                  </div>
+        <div>
+          <div className="bg-green-900">
+            <div className="text-center text-white py-16">
+              <h1 className="text-3xl font-bold text-white">What's New in Nature</h1>
+              <p className="mt-4">Recent updates, immersive stories, and relevant explainer articles from around The Nature Conservancy.</p>
+            </div>
+          </div>
+          <div className="relative">
+            <div className="bg-green-900 h-[170px] w-full absolute inset-0"></div>
+            <div className="relative max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-0">
+              <div className="bg-white text-black p-8 flex flex-col justify-between h-[330px] w-full">
+                <div>
+                  <h2 className="text-2xl font-bold mb-2">Gardening is the art that uses flowers and plants as paint, and the soil and sky as canvas.</h2>
+                  <p>Flowers and plants as paint suggests that gardeners carefully select and arrange plants much like an artist chooses colors to create a painting. Soil and sky as canvas emphasizes the importance of the natural environment in which gardens thrive.</p>
                 </div>
               </div>
-            </section>
-          );
-        })}
+              <div className="flex justify-center items-center h-[330px] w-full">
+                <img src="/images/G4.jpg" alt="Marsh" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+          <div className="bg-white ">
+            <div className="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-0">
+              <div className="flex justify-center items-center h-[330px] w-full">
+                <img src="/images/G5 new.jpg" alt="Bird's Head" className="w-full h-full object-cover" />
+              </div>
+              <div className="bg-white text-black p-8 flex flex-col justify-between h-[330px] w-full">
+                <div>
+                  <h2 className="text-2xl font-bold mb-2">Gardening is the purest of human pleasures.</h2>
+                  <p>Gardening is the purest of human pleasures underscores the intrinsic joy, satisfaction, and fulfillment that gardening brings. It celebrates the fundamental pleasure derived from nurturing life, connecting with nature, and witnessing the beauty of growth and renewal firsthand.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         {/* workflow */}
         {/* <section className="section pb-0">
