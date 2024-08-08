@@ -11,11 +11,11 @@ import GalleryImage6 from "../public/images/gallery6.jpg";
 import GalleryImage7 from "../public/images/gallery7.jpg";
 import GalleryImage8 from "../public/images/gallery8.jpg";
 import GalleryImage9 from "../public/images/gallery9.jpg";
+import ArticleImage from "../public/images/article1.jpg"; // Add this line to import the image
 
-function Faq({ data }) {
+function About({ data }) {
   const { frontmatter } = data;
-  const {title, intro, intro_image, section_items,feature } = frontmatter;
-
+  const { title, intro, intro_image, section_items, feature } = frontmatter;
 
   console.log("Data received: ", data); // Debugging: Check if data is received correctly
 
@@ -34,70 +34,39 @@ function Faq({ data }) {
       </div>
     </div>
   );
- 
 
   // Card Section
-  const CardSection = () => //(
-    // <section className="body-font bg-theme-white border-t border-gray-200 text-gray-700">
-    //   <div className="container mx-auto bg-theme-light px-5 py-24">
-    //     <div className="-m-4 flex flex-wrap">
-    //       {section_items.map((item, index) => (
-    //         <div key={index} className="p-4 md:w-1/3">
-    //           <div className="flex h-full flex-col rounded-lg bg-gray-100 p-8 shadow-lg">
-    //             <div className="mb-3 flex items-center justify-center">
-    //               {markdownify(
-    //                 item.title,
-    //                 "h2",
-    //                 "text-gray-900 text-xl title-font font-bold text-center text-indigo-600"
-    //               )}
-    //             </div>
-    //             <div className="flex-grow">
-    //               {markdownify(
-    //                 item.description,
-    //                 "p",
-    //                 "leading-relaxed text-base"
-    //               )}
-    //             </div>
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </section>
-  //);
-(
-  
-  <section className="section bg-theme-light bg-cover w-full mx-0">
-          <div className="container">
-            <div className="text-center">
-              <h2>{markdownify(feature.title)}</h2>
+  const CardSection = () => (
+    <section className="section mx-0 w-full bg-theme-light bg-cover">
+      <div className="container">
+        <div className="text-center">
+          <h2>{markdownify(feature.title)}</h2>
+        </div>
+        <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+          {feature.features.map((item, i) => (
+            <div
+              className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
+              key={`feature-${i}`}
+            >
+              {item.icon && (
+                <Image
+                  className="mx-auto"
+                  src={item.icon}
+                  width={30}
+                  height={30}
+                  alt=""
+                />
+              )}
+              <div className="mt-4">
+                {markdownify(item.name, "h3", "h5")}
+                <p className="mt-3">{item.content}</p>
+              </div>
             </div>
-            <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-              {feature.features.map((item, i) => (
-                <div
-                  className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
-                  key={`feature-${i}`}
-                >
-                  {item.icon && (
-                    <Image
-                      className="mx-auto"
-                      src={item.icon}
-                      width={30}
-                      height={30}
-                      alt=""
-                    />
-                  )}
-                  <div className="mt-4">
-                    {markdownify(item.name, "h3", "h5")}
-                    <p className="mt-3">{item.content}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-       );
-
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 
   // Gallery Section
   const GallerySection = () => {
@@ -171,9 +140,35 @@ function Faq({ data }) {
         {intro && intro_image && <IntroSection />}
         {section_items && section_items.length > 0 && <CardSection />}
         <GallerySection />
+        <div className="mt-12 flex items-center">
+          <div className="w-full px-4 md:w-1/2">
+            <Image
+              src={ArticleImage} // The image to be displayed near the article
+              alt="Article"
+              width={500} // Set the desired width
+              height={500} // Set the desired height
+              className="h-auto w-full rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="w-full px-4 text-lg text-gray-600 md:w-1/2">
+            {/* Marathi अग्रलेख */}
+            <p>
+              ग्रीन24, आम्ही तुमच्या बाह्य जागांना समृद्ध, जीवनसत्त्वांनी
+              परिपूर्ण बागांमध्ये रूपांतर करण्यासाठी समर्पित आहोत. बागायती आणि
+              लँडस्केप डिझाइनमध्ये वर्षानुवर्षे तज्ञतेसह, आमचे समर्पित बागकाम
+              व्यावसायिकांचे संघ तुमच्या अनन्य गरजांची पूर्तता करण्यासाठी
+              उत्कृष्ट सेवा प्रदान करण्यात कटिबद्ध आहे. नियमित देखभाल आणि हंगामी
+              लागवडीपासून ते पूर्ण बागेच्या रूपांतरणापर्यंत, आम्ही टिकाऊ पद्धती
+              आणि उच्च-गुणवत्तेच्या साहित्याचा वापर करतो जेणेकरून तुमची बाग
+              वर्षभर बहरते. ग्रीन24 मध्ये सामील व्हा आणि आम्हाला तुमची सुंदर,
+              टिकाऊ बाग तयार करण्यात मदत करा ज्याचा तुम्ही आनंद घेऊ शकता आणि
+              अभिमान बाळगू शकता.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
 }
 
-export default Faq;
+export default About;
