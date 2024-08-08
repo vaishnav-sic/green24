@@ -10,15 +10,15 @@ const Footer = () => {
   const { copyright, footer_content } = config.params;
   const { footer } = menu;
   return (
-    <footer className="section bg-theme-light pb-0">
+    <footer className="section bg-dark pb-0">
       <div className="container">
         {/* footer menu */}
         <div className="row">
           {footer.map((col) => {
             return (
               <div className="mb-12 sm:col-6 lg:col-3" key={col.name}>
-                {markdownify(col.name, "h2", "h4")}
-                <ul className="mt-6">
+                {markdownify(col.name, "h4", "text-white")}
+                <ul className="mt-6 text-white">
                   {col?.menu.map((item) => (
                     <li className="mb-1" key={item.text}>
                       <Link href={item.url} rel="">
@@ -30,6 +30,7 @@ const Footer = () => {
               </div>
             );
           })}
+          
           {/* social icons */}
           <div className="md-12 sm:col-6 lg:col-3">
             <Link href="/" aria-label="Bigspring">
@@ -45,12 +46,12 @@ const Footer = () => {
           </div>
         </div>
         {/* copyright */}
-        <div className="border-t border-border py-6" style={{ display: "flex", justifyContent: "center", alignItems: "center", background:"#f7f7f7", color:"black" }}>
+        <div className="border-t border-border py-6 bg-cover" style={{ display: "flex", justifyContent: "center", alignItems: "center", background:"#8fc745", color:"black" }}>
           {/* {markdownify(copyright, "p", "text-sm text-center")} */}
           <p className="site-footer__copy" style={{ display: "flex", alignItems: "center", margin: "0" }}>
             &copy; सर्वहक्कस्वाधीन २०२४ &nbsp;&nbsp;{" "}
               <a href="https://www.swasamvedya.com/" target="_blank">
-                <img src="/images/SIC_LogoName.svg" alt="Logo"  style={{height:"50px"}}/>
+                <img src="/images/SIC_LogoName.svg" alt="Logo"  style={{height:"50px", width:"200px"}}/>
               </ a>
               &nbsp;&nbsp; द्वारे ❤ प्रेमपूर्वक विकसित  
           </p>
@@ -61,4 +62,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
