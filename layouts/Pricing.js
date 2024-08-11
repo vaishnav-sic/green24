@@ -1,15 +1,24 @@
 import Link from "next/link";
 import Cta from "./components/Cta";
 
+const ContactHeader = () => {
+  return (
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/naturebg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2">Pricing</h1>
+    </div>
+  );
+};
+
 function Pricing({ data }) {
   const {
     frontmatter: { title, plans, call_to_action },
   } = data;
   return (
     <>
+    <ContactHeader />
       <section className="section pb-0">
         <div className="container">
-          <h1 className="text-center font-normal">{title}</h1>
+          {/* <h1 className="text-center font-normal">{title}</h1> */}
           <div className="section row -mt-10 justify-center md:mt-0">
             {plans.map((plan, index) => (
               <div
@@ -21,7 +30,7 @@ function Pricing({ data }) {
                 <div className="card text-center">
                   <h4>{plan.title}</h4>
                   <div className="mt-5">
-                    <span className="text-5xl text-dark">${plan.price}</span>
+                    <span className="text-5xl text-dark">₹{plan.price}</span>
                     <span>/ {plan.type}</span>
                   </div>
                   <h5 className="mt-2 font-normal text-text">

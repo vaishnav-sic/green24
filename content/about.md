@@ -1,6 +1,6 @@
 ---
-title: ABOUT US
-layout: faq
+title: About Us
+layout: about
 draft: false
 intro: "Green24, we are passionate about transforming your outdoor spaces into lush, vibrant gardens that inspire and rejuvenate. With years of expertise in horticulture and landscape design, our dedicated team of gardening professionals is committed to providing top-notch services tailored to meet your unique needs. From routine maintenance and seasonal planting to complete garden makeovers, we use sustainable practices and high-quality materials to ensure your garden thrives all year round. Join us at Green24 and let us help you create a beautiful, sustainable garden that you can enjoy and be proud of."
 intro_image: "/images/faq-intro.jpg"
