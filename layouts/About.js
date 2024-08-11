@@ -13,6 +13,14 @@ import GalleryImage8 from "../public/images/gallery8.jpg";
 import GalleryImage9 from "../public/images/gallery9.jpg";
 import ArticleImage from "../public/images/article1.jpg"; // Add this line to import the image
 
+const ContactHeader = () => {
+  return (
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/naturebg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2">About Us</h1>
+    </div>
+  );
+};
+
 function About({ data }) {
   const { frontmatter } = data;
   const { title, intro, intro_image, section_items, feature } = frontmatter;
@@ -134,9 +142,11 @@ function About({ data }) {
   };
 
   return (
+    <>
+    <ContactHeader />
     <section className="section">
       <div className="container mx-auto">
-        {markdownify(title, "h1", "text-center font-normal mb-8")}
+        {/* {markdownify(title, "h1", "text-center font-normal mb-8")} */}
         {intro && intro_image && <IntroSection />}
         {section_items && section_items.length > 0 && <CardSection />}
         <GallerySection />
@@ -163,11 +173,22 @@ function About({ data }) {
               वर्षभर बहरते. ग्रीन24 मध्ये सामील व्हा आणि आम्हाला तुमची सुंदर,
               टिकाऊ बाग तयार करण्यात मदत करा ज्याचा तुम्ही आनंद घेऊ शकता आणि
               अभिमान बाळगू शकता.
+
+              नमस्कार 
+              मी डॉ.संदिप शिंदे ( Agriculturist- Gardening Specialist )
+              शेतकरी कुटुंबातील असल्याने लहानपणापासून शेती, झाडें, भाजीपाला, फळबागायत याबाबत खूप आवड आहे. 
+              कृषी संदर्भातील शिक्षण पूर्ण झाल्यानंतर शेती सोबत गार्डनिंग चे सुद्धा काम करत आहे.. गार्डनिंग व्यवसायात मला 
+              जवळपास 10 वर्षांचा अनुभव आहे.. हा व्यवसाय करण्यामगे फक्त पैसे कमवणे हा उद्देश नसून, हा व्यवसाय 
+              मी आवड म्हणून करत आहे.. शाळा, कॉलेज, फार्म हाऊस, हॉटेल्स, इत्यादी च्या गार्डन चे काम केले आहे. 
+              त्याचबरोबर अनेक शेतकऱ्यांना फळबागयात संदर्भात मार्गदर्शन सुद्धा करतो आहे.. माझ्याकडे शिक्षणासोबत अनुभवाची 
+              सुद्धा जोड आहे..उत्कृष्ट काम केल्यामुळे कर्मवीर भाऊराव पाटील कॉलेज यांनी सन्मानचिन्ह देऊन मला सन्मानित केले आहे..
+              व्यवसाय करत असताना पैशा सोबत गार्डन मध्ये काम करण्याचा सुद्धा आनंद मिळतो...
             </p>
           </div>
         </div>
       </div>
     </section>
+    </>
   );
 }
 

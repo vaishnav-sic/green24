@@ -32,7 +32,7 @@ const Footer = () => {
           })}
           
           {/* social icons */}
-          <div className="md-12 sm:col-6 lg:col-3">
+          <div className="md-12 sm:col-6 lg:col-3 text-white">
             <Link href="/" aria-label="Bigspring">
               <Image
                 src={config.site.logo}
