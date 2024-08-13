@@ -12,6 +12,7 @@ import GalleryImage7 from "../public/images/gallery7.jpg";
 import GalleryImage8 from "../public/images/gallery8.jpg";
 import GalleryImage9 from "../public/images/gallery9.jpg";
 import ArticleImage from "../public/images/article2.jpg"; // Add this line to import the image
+import AdditionalImage from "../public/images/art3.png"; // Add this line to import the image
 
 const ContactHeader = () => {
   return (
@@ -152,16 +153,27 @@ function About({ data }) {
           <GallerySection />
           <div className="mt-12 flex items-center">
             <div className="w-full px-4 md:w-1/3">
-              <Image
-                src={ArticleImage} // The image to be displayed near the article
-                alt="Article"
-                width={400} // Set the desired width
-                height={100} // Set the desired height
-                className="mb-8 w-full px-4 md:mb-0 md:w-1/2"
-              />
+              <div className="flex flex-col space-y-4">
+                <Image
+                  src={ArticleImage} // The first image to be displayed near the article
+                  alt="Article"
+                  width={400} // Set the desired width
+                  height={100} // Set the desired height
+                  className="w-full rounded-lg shadow-md"
+                />
+                <Image
+                  src={AdditionalImage} // The second image to be displayed near the article
+                  alt="Additional"
+                  width={400} // Set the desired width
+                  height={100} // Set the desired height
+                  className="w-full rounded-lg shadow-md"
+                />
+              </div>
             </div>
             <div className="w-full px-4 text-lg text-gray-600 md:w-2/3">
               {/* Marathi अग्रलेख */}
+                            <div className="space-y-6"> {/* Add this div to control the spacing */}
+
               <p>
                 ग्रीन24, आम्ही तुमच्या बाह्य जागांना समृद्ध, जीवनसत्त्वांनी
                 परिपूर्ण बागांमध्ये रूपांतर करण्यासाठी समर्पित आहोत. बागायती आणि
@@ -210,6 +222,8 @@ function About({ data }) {
                 tailored solutions that meet your needs and exceed your
                 expectations.
               </p>
+                          </div>
+
             </div>
           </div>
         </div>

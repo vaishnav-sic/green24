@@ -26,7 +26,6 @@ Here is an example of headings. You can use this heading by the following markdo
 
 ##### Emphasis
 
-The emphasis, aka italics, with _asterisks_ or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or **underscores**.
 

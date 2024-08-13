@@ -1,14 +1,12 @@
 ---
-title: "Adversus is a web-based dialer and practical CRM solution"
-description: "Heading example Here is example of hedings. You can use this heading by following markdownify rules."
+title: ""
+description: ""
 image: "/images/blog-4.jpg"
 date: 2022-08-04T05:00:00Z
 draft: false
 ---
 
 ##### Heading example
-
-Here is an example of headings. You can use this heading by the following markdown rules. For example: use # for heading 1 and use ###### for heading 6.
 
 # Heading 1
 
