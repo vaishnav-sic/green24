@@ -16,7 +16,8 @@ const Home = ({ frontmatter }) => {
   const ContactHeader = () => {
     return (
       <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/bg (2).jpg')", marginTop: '50px', height: '250px' }}>
-        <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2" style={{bottom: '50%', left: '50%', transform: 'translate(-50%, 50%)', }}>"Gardens are where we find peace and beauty"</h1>
+        {/* <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2" style={{bottom: '50%', left: '50%', transform: 'translate(-50%, 50%)', }}>"Gardens are where we find peace and beauty"</h1> */}
+        <h1 className="text-5xl font-bold text-primary">"Gardens are where we find<br/> peace and beauty"</h1>
       </div>
     );
   };  
@@ -163,8 +164,8 @@ const Home = ({ frontmatter }) => {
             <div className="relative max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-0">
               <div className="bg-white text-black p-8 flex flex-col justify-between h-[330px] w-full text-animate">
                 <div>
-                  <h2 className="text-2xl font-bold mb-2">Gardening is the art that uses flowers and plants as paint, and the soil and sky as canvas.</h2>
-                  <p>Flowers and plants as paint suggests that gardeners carefully select and arrange plants much like an artist chooses colors to create a painting. Soil and sky as canvas emphasizes the importance of the natural environment in which gardens thrive.</p>
+                  <h2 className="text-2xl font-bold mb-2">Garden is a friend you can visit anytime.</h2>
+                  <p>It highlights the profound relationship between humans and nature, emphasizing the garden's role not just as a place of cultivation, but as a source of emotional well-being, inspiration, and connection to the natural world.</p>
                 </div>
               </div>
               <div className="flex justify-center items-center h-[330px] w-full">
