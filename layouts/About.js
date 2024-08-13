@@ -2,15 +2,6 @@ import React from "react";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import BgImage from "../public/images/11.jpg";
-import GalleryImage1 from "../public/images/gallery1.jpg";
-import GalleryImage2 from "../public/images/gallery2.jpg";
-import GalleryImage3 from "../public/images/gallery3.jpg";
-import GalleryImage4 from "../public/images/gallery4.jpg";
-import GalleryImage5 from "../public/images/gallery5.jpg";
-import GalleryImage6 from "../public/images/gallery6.jpg";
-import GalleryImage7 from "../public/images/gallery7.jpg";
-import GalleryImage8 from "../public/images/gallery8.jpg";
-import GalleryImage9 from "../public/images/gallery9.jpg";
 import ArticleImage from "../public/images/article2.jpg"; // Add this line to import the image
 import AdditionalImage from "../public/images/art3.png"; // Add this line to import the image
 
@@ -78,69 +69,6 @@ function About({ data }) {
   );
 
   // Gallery Section
-  const GallerySection = () => {
-    const images = [
-      GalleryImage1,
-      GalleryImage2,
-      GalleryImage3,
-      GalleryImage4,
-      GalleryImage5,
-      GalleryImage6,
-      GalleryImage7,
-      GalleryImage8,
-      GalleryImage9,
-    ];
-
-    return (
-      <section>
-        <div className="container mx-auto px-5 py-24">
-          <div className="mb-20 flex w-full flex-col text-center">
-            <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-indigo-500">
-              OUR GALLERY
-            </h2>
-            <h1 className="title-font text-2xl font-medium text-gray-900 sm:text-3xl">
-              Check out our work
-            </h1>
-          </div>
-          <div className="-m-1 flex flex-wrap md:-m-2">
-            {images.map((image, index) => (
-              <div key={index} className="flex w-1/3 flex-wrap">
-                <div className="w-full p-1 md:p-2">
-                  <div className="gallery-img-wrapper">
-                    <Image
-                      alt="gallery"
-                      src={image}
-                      layout="fill"
-                      objectFit="cover"
-                      className="gallery-img"
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <style jsx>{`
-          .gallery-img-wrapper {
-            position: relative;
-            width: 100%;
-            padding-bottom: 75%; /* Adjust this to get the desired aspect ratio */
-            overflow: hidden;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          }
-
-          .gallery-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
-        `}</style>
-      </section>
-    );
-  };
 
   return (
     <>
@@ -150,7 +78,6 @@ function About({ data }) {
           {/* {markdownify(title, "h1", "text-center font-normal mb-8")} */}
           {intro && intro_image && <IntroSection />}
           {section_items && section_items.length > 0 && <CardSection />}
-          <GallerySection />
           <div className="mt-12 flex items-center">
             <div className="w-full px-4 md:w-1/3">
               <div className="flex flex-col space-y-4">
@@ -222,8 +149,7 @@ function About({ data }) {
                 tailored solutions that meet your needs and exceed your
                 expectations.
               </p>
-                          </div>
-
+              </div>
             </div>
           </div>
         </div>
