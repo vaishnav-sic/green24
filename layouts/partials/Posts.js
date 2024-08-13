@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Import your gallery images here
-
 import GalleryImage1 from "../../public/images/gallery1.jpg";
 import GalleryImage2 from "../../public/images/gallery2.jpg";
 import GalleryImage3 from "../../public/images/gallery3.jpg";
@@ -14,6 +13,40 @@ import GalleryImage6 from "../../public/images/gallery6.jpg";
 import GalleryImage7 from "../../public/images/gallery7.jpg";
 import GalleryImage8 from "../../public/images/gallery8.jpg";
 import GalleryImage9 from "../../public/images/gallery9.jpg";
+
+// ContactHeader component
+const ContactHeader = () => {
+  return (
+    <div
+      className="relative z-10 mt-12 bg-cover bg-center py-6 text-center"
+      style={{
+        backgroundImage: "url('/images/naturebg.jpg')",
+        marginTop: "100px",
+        height: "250px",
+      }}
+    >
+      <h1 className="absolute bottom-6 left-1/2 -translate-x-1/2 transform text-5xl font-bold leading-tight text-primary">
+       Gallery
+      </h1>
+    </div>
+  );
+};
+
+ const IntroSection = () => (
+   <div className="mb-12 flex flex-wrap items-center">
+     <div className="mb-8 w-full px-4 md:mb-0 md:w-1/2">
+       <Image
+         src={BgImage}
+         alt="About Us"
+         className="h-auto w-full rounded-lg shadow-lg"
+       />
+     </div>
+     <div className="w-full px-4 md:w-1/2">
+       {markdownify(intro, "p", "text-lg text-gray-600")}
+     </div>
+   </div>
+ );
+
 const Posts = ({ posts }) => {
   const { blog_folder, summary_length } = config.settings;
 
@@ -83,65 +116,57 @@ const Posts = ({ posts }) => {
   };
 
   return (
-    <div className="section row pb-0">
-      <div className="col-12 pb-12 lg:pb-24">
-        <div className="row items-center">
-          {/* The following section is commented out and replaced by the gallery section */}
-          {/* <div className="col-12 md:col-6">
-            {posts[0].frontmatter.image && (
-              <Image
-                className="h-auto w-full rounded-lg"
-                src={posts[0].frontmatter.image}
-                alt={posts[0].frontmatter.title}
-                width={540}
-                height={227}
-                priority={true}
-              />
-            )}
-          </div> */}
-          <div className="col-12 md:col-6">
-            <h2 className="h3 mb-2 mt-4">
-              <Link
-                href={`/${blog_folder}/${posts[0].slug}`}
-                className="block hover:text-primary"
-              >
-                {posts[0].frontmatter.title}
-              </Link>
-            </h2>
-            <p className="text-text">
-              {plainify(
-                posts[0].content?.slice(0, Number(summary_length)),
-                "div"
-              )}
-            </p>
+    <div>
+      {/* Render the ContactHeader component at the top */}
+      <ContactHeader />
+
+      <div className="section row pb-0">
+        <div className="col-12 pb-12 lg:pb-24">
+          <div className="row items-center">
+            <div className="col-12 md:col-6">
+              <h2 className="h3 mb-2 mt-4">
+                <Link
+                  href={`/${blog_folder}/${posts[0].slug}`}
+                  className="block hover:text-primary"
+                >
+                  {posts[0].frontmatter.title}
+                </Link>
+              </h2>
+              <p className="text-text">
+                {plainify(
+                  posts[0].content?.slice(0, Number(summary_length)),
+                  "div"
+                )}
+              </p>
+            </div>
           </div>
         </div>
+
+        {/* Render the gallery section */}
+        <GallerySection />
+
+        {posts.slice(1).map((post, i) => (
+          <div key={`key-${i}`} className="col-12 mb-8 sm:col-6 lg:col-4">
+            {post.frontmatter.image && (
+              <Image
+                className="rounded-lg"
+                src={post.frontmatter.image}
+                alt={post.frontmatter.title}
+                width={i === 0 ? "925" : "445"}
+                height={i === 0 ? "475" : "230"}
+              />
+            )}
+            <h2 className="h3 mb-2 mt-4">
+              <Link
+                href={`/${blog_folder}/${post.slug}`}
+                className="block hover:text-primary"
+              >
+                {post.frontmatter.title}
+              </Link>
+            </h2>
+          </div>
+        ))}
       </div>
-
-      {/* Render the gallery section */}
-      <GallerySection />
-
-      {posts.slice(1).map((post, i) => (
-        <div key={`key-${i}`} className="col-12 mb-8 sm:col-6 lg:col-4">
-          {post.frontmatter.image && (
-            <Image
-              className="rounded-lg"
-              src={post.frontmatter.image}
-              alt={post.frontmatter.title}
-              width={i === 0 ? "925" : "445"}
-              height={i === 0 ? "475" : "230"}
-            />
-          )}
-          <h2 className="h3 mb-2 mt-4">
-            {/* <Link
-              href={`/${blog_folder}/${post.slug}`}
-              className="block hover:text-primary"
-            >
-              {post.frontmatter.title}
-            </Link> */}
-          </h2>
-        </div>
-      ))}
     </div>
   );
 };
