@@ -1,6 +1,6 @@
 ---
-title: ""
-description: ""
+title: "ddddddddddddddddddd"
+description: "dddddddddddddddddddd"
 image: "/images/blog-1.jpg"
 date: 2022-04-04T05:00:00Z
 draft: false
@@ -26,7 +26,6 @@ Here is an example of headings. You can use this heading by the following markdo
 
 ##### Emphasis
 
-The emphasis, aka italics, with _asterisks_ or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or **underscores**.
 
