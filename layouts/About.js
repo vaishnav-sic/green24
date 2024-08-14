@@ -30,7 +30,7 @@ function About({ data }) {
 
   // Intro Section
   const IntroSection = () => (
-    <div className="mb-12 flex flex-wrap items-center">
+    <div className="mb-12 flex flex-wrap items-center rounded-lg p-6 shadow-lg">
       <div className="mb-8 w-full px-4 md:mb-0 md:w-1/2">
         <Image
           src={BgImage}
@@ -93,7 +93,7 @@ function About({ data }) {
 
     return (
       <section>
-        <div className="container mx-auto px-5 py-24">
+        <div className="container mx-auto rounded-lg p-6 px-5 py-24 shadow-lg">
           <div className="mb-20 flex w-full flex-col text-center">
             <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-indigo-500">
               OUR GALLERY
@@ -104,7 +104,7 @@ function About({ data }) {
           </div>
           <div className="-m-1 flex flex-wrap md:-m-2">
             {images.map((image, index) => (
-              <div key={index} className="flex w-1/3 flex-wrap">
+              <div key={index} className="w-full p-1 sm:w-1/2 md:w-1/3 md:p-2">
                 <div className="w-full p-1 md:p-2">
                   <div className="gallery-img-wrapper">
                     <Image
@@ -151,7 +151,7 @@ function About({ data }) {
           {intro && intro_image && <IntroSection />}
           {section_items && section_items.length > 0 && <CardSection />}
           <GallerySection />
-          <div className="mt-12 flex items-center">
+          <div className="mt-12 flex flex-col items-center rounded-lg p-6 shadow-lg md:flex-row">
             <div className="w-full px-4 md:w-1/3">
               <div className="flex flex-col space-y-4">
                 <Image
@@ -170,60 +170,63 @@ function About({ data }) {
                 />
               </div>
             </div>
-            <div className="w-full px-4 text-lg text-gray-600 md:w-2/3">
+            <div className="w-full px-4 text-lg text-gray-600 md:w-2/3 ">
               {/* Marathi अग्रलेख */}
-                            <div className="space-y-6"> {/* Add this div to control the spacing */}
-
-              <p>
-                ग्रीन24, आम्ही तुमच्या बाह्य जागांना समृद्ध, जीवनसत्त्वांनी
-                परिपूर्ण बागांमध्ये रूपांतर करण्यासाठी समर्पित आहोत. बागायती आणि
-                लँडस्केप डिझाइनमध्ये वर्षानुवर्षे तज्ञतेसह, आमचे समर्पित बागकाम
-                व्यावसायिकांचे संघ तुमच्या अनन्य गरजांची पूर्तता करण्यासाठी
-                उत्कृष्ट सेवा प्रदान करण्यात कटिबद्ध आहे. नियमित देखभाल आणि
-                हंगामी लागवडीपासून ते पूर्ण बागेच्या रूपांतरणापर्यंत, आम्ही
-                टिकाऊ पद्धती आणि उच्च-गुणवत्तेच्या साहित्याचा वापर करतो जेणेकरून
-                तुमची बाग वर्षभर बहरते. ग्रीन24 मध्ये सामील व्हा आणि आम्हाला
-                तुमची सुंदर, टिकाऊ बाग तयार करण्यात मदत करा ज्याचा तुम्ही आनंद
-                घेऊ शकता आणि अभिमान बाळगू शकता. नमस्कार मी डॉ.संदिप शिंदे (
-                Agriculturist- Gardening Specialist ) शेतकरी कुटुंबातील असल्याने
-                लहानपणापासून शेती, झाडें, भाजीपाला, फळबागायत याबाबत खूप आवड आहे.
-                कृषी संदर्भातील शिक्षण पूर्ण झाल्यानंतर शेती सोबत गार्डनिंग चे
-                सुद्धा काम करत आहे.. गार्डनिंग व्यवसायात मला जवळपास 10 वर्षांचा
-                अनुभव आहे.. हा व्यवसाय करण्यामगे फक्त पैसे कमवणे हा उद्देश नसून,
-                हा व्यवसाय मी आवड म्हणून करत आहे.. शाळा, कॉलेज, फार्म हाऊस,
-                हॉटेल्स, इत्यादी च्या गार्डन चे काम केले आहे. त्याचबरोबर अनेक
-                शेतकऱ्यांना फळबागयात संदर्भात मार्गदर्शन सुद्धा करतो आहे..
-                माझ्याकडे शिक्षणासोबत अनुभवाची सुद्धा जोड आहे..उत्कृष्ट काम
-                केल्यामुळे कर्मवीर भाऊराव पाटील कॉलेज यांनी सन्मानचिन्ह देऊन मला
-                सन्मानित केले आहे.. व्यवसाय करत असताना पैशा सोबत गार्डन मध्ये
-                काम करण्याचा सुद्धा आनंद मिळतो... <br />I am Dr. Sandip Shinde,
-                an experienced Agriculturist and Gardening Specialist with a
-                deep-rooted passion for agriculture and horticulture. Growing up
-                in a family of farmers, my lifelong fascination with plants,
-                trees, vegetables, and orchards has been a driving force behind
-                my career. With a decade of hands-on experience in the gardening
-                business, I offer a unique blend of academic knowledge and
-                practical expertise. My educational background in agriculture
-                complements my extensive experience in both personal and
-                professional gardening. This dual advantage allows me to provide
-                exceptional guidance and innovative solutions in various
-                gardening projects. Throughout my career, I have successfully
-                managed and transformed gardens for diverse settings, including
-                schools, colleges, farmhouses, and hotels. Additionally, I offer
-                expert consultancy to farmers, particularly in the realm of
-                fruit orchards, helping them enhance their yields and optimize
-                their farming practices. My commitment to gardening goes beyond
-                mere financial gain; it is a cherished hobby and a true passion.
-                This genuine dedication drives me to deliver excellence in every
-                project, ensuring not only aesthetic appeal but also functional
-                and sustainable gardening solutions. Whether you're looking to
-                create a stunning garden, improve existing green spaces, or seek
-                expert advice on orchard management, I am here to provide
-                tailored solutions that meet your needs and exceed your
-                expectations.
-              </p>
-                          </div>
-
+              <div className="space-y-6">
+                {" "}
+                {/* Add this div to control the spacing */}
+                <p>
+                  ग्रीन24, आम्ही तुमच्या बाह्य जागांना समृद्ध, जीवनसत्त्वांनी
+                  परिपूर्ण बागांमध्ये रूपांतर करण्यासाठी समर्पित आहोत. बागायती
+                  आणि लँडस्केप डिझाइनमध्ये वर्षानुवर्षे तज्ञतेसह, आमचे समर्पित
+                  बागकाम व्यावसायिकांचे संघ तुमच्या अनन्य गरजांची पूर्तता
+                  करण्यासाठी उत्कृष्ट सेवा प्रदान करण्यात कटिबद्ध आहे. नियमित
+                  देखभाल आणि हंगामी लागवडीपासून ते पूर्ण बागेच्या
+                  रूपांतरणापर्यंत, आम्ही टिकाऊ पद्धती आणि उच्च-गुणवत्तेच्या
+                  साहित्याचा वापर करतो जेणेकरून तुमची बाग वर्षभर बहरते. ग्रीन24
+                  मध्ये सामील व्हा आणि आम्हाला तुमची सुंदर, टिकाऊ बाग तयार
+                  करण्यात मदत करा ज्याचा तुम्ही आनंद घेऊ शकता आणि अभिमान बाळगू
+                  शकता. नमस्कार मी डॉ.संदिप शिंदे ( Agriculturist- Gardening
+                  Specialist ) शेतकरी कुटुंबातील असल्याने लहानपणापासून शेती,
+                  झाडें, भाजीपाला, फळबागायत याबाबत खूप आवड आहे. कृषी संदर्भातील
+                  शिक्षण पूर्ण झाल्यानंतर शेती सोबत गार्डनिंग चे सुद्धा काम करत
+                  आहे.. गार्डनिंग व्यवसायात मला जवळपास 10 वर्षांचा अनुभव आहे..
+                  हा व्यवसाय करण्यामगे फक्त पैसे कमवणे हा उद्देश नसून, हा
+                  व्यवसाय मी आवड म्हणून करत आहे.. शाळा, कॉलेज, फार्म हाऊस,
+                  हॉटेल्स, इत्यादी च्या गार्डन चे काम केले आहे. त्याचबरोबर अनेक
+                  शेतकऱ्यांना फळबागयात संदर्भात मार्गदर्शन सुद्धा करतो आहे..
+                  माझ्याकडे शिक्षणासोबत अनुभवाची सुद्धा जोड आहे..उत्कृष्ट काम
+                  केल्यामुळे कर्मवीर भाऊराव पाटील कॉलेज यांनी सन्मानचिन्ह देऊन
+                  मला सन्मानित केले आहे.. व्यवसाय करत असताना पैशा सोबत गार्डन
+                  मध्ये काम करण्याचा सुद्धा आनंद मिळतो...
+                  <br />
+                  <br />I am Dr. Sandip Shinde, an experienced Agriculturist and
+                  Gardening Specialist with a deep-rooted passion for
+                  agriculture and horticulture. Growing up in a family of
+                  farmers, my lifelong fascination with plants, trees,
+                  vegetables, and orchards has been a driving force behind my
+                  career. With a decade of hands-on experience in the gardening
+                  business, I offer a unique blend of academic knowledge and
+                  practical expertise. My educational background in agriculture
+                  complements my extensive experience in both personal and
+                  professional gardening. This dual advantage allows me to
+                  provide exceptional guidance and innovative solutions in
+                  various gardening projects. Throughout my career, I have
+                  successfully managed and transformed gardens for diverse
+                  settings, including schools, colleges, farmhouses, and hotels.
+                  Additionally, I offer expert consultancy to farmers,
+                  particularly in the realm of fruit orchards, helping them
+                  enhance their yields and optimize their farming practices. My
+                  commitment to gardening goes beyond mere financial gain; it is
+                  a cherished hobby and a true passion. This genuine dedication
+                  drives me to deliver excellence in every project, ensuring not
+                  only aesthetic appeal but also functional and sustainable
+                  gardening solutions. Whether you're looking to create a
+                  stunning garden, improve existing green spaces, or seek expert
+                  advice on orchard management, I am here to provide tailored
+                  solutions that meet your needs and exceed your expectations.
+                </p>
+              </div>
             </div>
           </div>
         </div>

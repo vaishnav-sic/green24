@@ -10,10 +10,10 @@ import GalleryImage8 from "../../public/images/gallery8.jpg";
 import GalleryImage9 from "../../public/images/gallery9.jpg";
 
 // ContactHeader component
-const ContactHeader = () => {
+const GalleryHeader = () => {
   return (
     <div
-      className="relative z-10 mt-12 bg-cover bg-center py-6 text-center"
+      className="relative z-10 mt-12  bg-cover bg-center py-6 text-center"
       style={{
         backgroundImage: "url('/images/naturebg.jpg')",
         marginTop: "100px",
@@ -34,9 +34,10 @@ const CardComponent = ({ image, heading, paragraph, imagesBelow }) => (
       <Image
         src={image}
         alt="Gallery"
-        className="h-auto w-full rounded-lg shadow-md"
+        className="rounded-lg shadow-md"
         width={600}
-        height={400}
+        height={100}
+        objectFit="cover" // Ensure the image covers the area
       />
     </div>
     <div className="flex w-full flex-col items-center px-4 md:w-1/2">
@@ -131,7 +132,7 @@ const GallerySection = () => {
 const Posts = () => {
   return (
     <div>
-      <ContactHeader />
+      <GalleryHeader />
       <div className="section row pb-0">
         {/* <div className="col-12 pb-12 lg:pb-24">
           <div className="row items-center">
@@ -150,21 +151,21 @@ const Posts = () => {
 
         <CardComponent
           image={GalleryImage1}
-          heading="Beautiful Showcase"
+          heading="Lawn Care"
           paragraph="Welcome to our gallery! Explore the beautiful images that showcase our work and creativity. Each picture tells a story, reflecting the essence of our dedication and passion."
           imagesBelow={[GalleryImage2, GalleryImage3, GalleryImage4]}
         />
 
         <CardComponent
           image={GalleryImage5}
-          heading="Our Journey Highlights"
+          heading="Pest & Disease Control"
           paragraph="Our gallery captures the highlights of our journey, each image illustrating our commitment to excellence and our love for what we do."
           imagesBelow={[GalleryImage6, GalleryImage7, GalleryImage8]}
         />
 
         <CardComponent
           image={GalleryImage9}
-          heading="Moments and Memories"
+          heading="Garden Cleanup"
           paragraph="Dive into our collection of moments and memories, showcasing the artistry and hard work that define our projects."
           imagesBelow={[GalleryImage1, GalleryImage2, GalleryImage3]}
         />
