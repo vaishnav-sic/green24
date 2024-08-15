@@ -10,10 +10,10 @@ import GalleryImage8 from "../../public/images/gallery8.jpg";
 import GalleryImage9 from "../../public/images/gallery9.jpg";
 
 // ContactHeader component
-const ContactHeader = () => {
+const GalleryHeader = () => {
   return (
-    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/naturebg.jpg')", marginTop: '100px', height: '250px' }}>
-      <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2">Gallery</h1>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/HeaderBg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold text-primary">Gallery</h1>
     </div>
   );
 };
@@ -122,7 +122,7 @@ const GallerySection = () => {
 const Posts = () => {
   return (
     <>
-      <ContactHeader />
+      <GalleryHeader />
       <div>
         <div className="section row pb-0">
           {/* <div className="col-12 pb-12 lg:pb-24">
