@@ -79,33 +79,33 @@ const GallerySection = () => {
 
   return (
     <section>
-      <div className="container mx-auto px-5 py-24">
-        <div className="mb-20 flex w-full flex-col text-center">
-          <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-indigo-500">
-            OUR GALLERY
-          </h2>
-          <h1 className="title-font text-2xl font-medium text-gray-900 sm:text-3xl">
-            Check out our work
-          </h1>
-        </div>
-        <div className="-m-1 flex flex-wrap md:-m-2">
-          {images.map((image, index) => (
-            <div key={index} className="flex w-1/3 flex-wrap">
-              <div className="w-full p-1 md:p-2">
-                <div className="gallery-img-wrapper">
-                  <Image
-                    alt={`gallery image ${index + 1}`}
-                    src={image}
-                    layout="fill"
-                    objectFit="cover"
-                    className="gallery-img"
-                  />
+      <div className="container mx-auto rounded-lg p-6 px-5 py-24 shadow-lg">
+          <div className="mb-20 flex w-full flex-col text-center">
+            <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-indigo-500">
+              OUR GALLERY
+            </h2>
+            <h1 className="title-font text-2xl font-medium text-gray-900 sm:text-3xl">
+              Check out our work
+            </h1>
+          </div>
+          <div className="-m-1 flex flex-wrap md:-m-2">
+            {images.map((image, index) => (
+              <div key={index} className="w-full p-1 sm:w-1/2 md:w-1/3 md:p-2">
+                <div className="w-full p-1 md:p-2">
+                  <div className="gallery-img-wrapper">
+                    <Image
+                      alt="gallery"
+                      src={image}
+                      layout="fill"
+                      objectFit="cover"
+                      className="gallery-img"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
       <style jsx>{`
         .gallery-img-wrapper {
           position: relative;
