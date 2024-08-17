@@ -5,10 +5,10 @@ import BgImage from "../public/images/11.jpg";
 import ArticleImage from "../public/images/article2.jpg"; // Add this line to import the image
 import AdditionalImage from "../public/images/art3.png"; // Add this line to import the image
 
-const ContactHeader = () => {
+const AboutHeader = () => {
   return (
-    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/naturebg.jpg')", marginTop: '100px', height: '250px' }}>
-      <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2">About Us</h1>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/HeaderBg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold text-primary">About Us</h1>
     </div>
   );
 };
@@ -34,50 +34,14 @@ function About({ data }) {
       </div>
     </div>
   );
-
-  // Card Section
-  const CardSection = () => (
-    <section className="section mx-0 w-full bg-theme-light bg-cover">
-      <div className="container">
-        <div className="text-center">
-          <h2>{markdownify(feature.title)}</h2>
-        </div>
-        <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-          {feature.features.map((item, i) => (
-            <div
-              className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
-              key={`feature-${i}`}
-            >
-              {item.icon && (
-                <Image
-                  className="mx-auto"
-                  src={item.icon}
-                  width={30}
-                  height={30}
-                  alt=""
-                />
-              )}
-              <div className="mt-4">
-                {markdownify(item.name, "h3", "h5")}
-                <p className="mt-3">{item.content}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-
-  // Gallery Section
-
+  
   return (
     <>
-      <ContactHeader />
+      <AboutHeader />
       <section className="section">
         <div className="container mx-auto">
           {/* {markdownify(title, "h1", "text-center font-normal mb-8")} */}
           {intro && intro_image && <IntroSection />}
-          {section_items && section_items.length > 0 && <CardSection />}
           <div className="mt-12 flex items-center">
             <div className="w-full px-4 md:w-1/3">
               <div className="flex flex-col space-y-4">
@@ -123,7 +87,9 @@ function About({ data }) {
                 माझ्याकडे शिक्षणासोबत अनुभवाची सुद्धा जोड आहे..उत्कृष्ट काम
                 केल्यामुळे कर्मवीर भाऊराव पाटील कॉलेज यांनी सन्मानचिन्ह देऊन मला
                 सन्मानित केले आहे.. व्यवसाय करत असताना पैशा सोबत गार्डन मध्ये
-                काम करण्याचा सुद्धा आनंद मिळतो... <br />I am Dr. Sandip Shinde,
+                काम करण्याचा सुद्धा आनंद मिळतो... <br />
+                <br /><br />
+                I am Dr. Sandip Shinde,
                 an experienced Agriculturist and Gardening Specialist with a
                 deep-rooted passion for agriculture and horticulture. Growing up
                 in a family of farmers, my lifelong fascination with plants,

@@ -3,7 +3,7 @@ banner:
   title: Welcome to Your Ultimate Gardening Destination
   # title: Let us solve your critical website development challenges
   # content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
-  content: Grow Your Green Thumb with Us!
+  content: We prioritize quality over quantity in everything we do!
   image: /images/banner-art.svg
   button:
     label: "Contact Us"
@@ -18,19 +18,19 @@ feature:
     content: "Nurseries ensure plants are healthy,well-rooted and ready to thrive in new environments"
   - name: "Expert Knowledge"
     icon: "/images/expert.png"
-    content: "Staff at nurseries are knowledgeable about plant care,growth requirements, and best practices for different species"
+    content: "Staff at nurseries are knowledgeable about plant care, growth requirements, and best practices for different species"
   - name: "Wide Selection"
     icon: "/images/wide.png"
-    content: "Nurseries offer a diverse range of plants ,including those not typically available at general retail stores"
+    content: "Nurseries offer a diverse range of plants, including those not typically available at general retail stores"
   - name: "Sustainability"
     icon: "/images/sustainable gardening.png"
-    content: "Many nurseries focus on sustinable practices ,such as using organic growing methods and promoting native plant species"
+    content: "Many nurseries focus on sustinable practices, such as using organic growing methods and promoting native plant species"
   - name: "Customized Growing Conditions"
     icon: "/images/customized.png"
     content: "Providing optimal conditionsfor plants that require less direct sunlight"
   - name: "Greenhouses"
     icon: "/images/greenhouse.png"
-    content: "Using controlled environments to grow plants year-round ,regardless of external weather conditions."
+    content: "Using controlled environments to grow plants year-round, regardless of external weather conditions."
 
 # services
 services:
@@ -48,7 +48,7 @@ services:
   - title: "Gardening is a way of showing that you believe in tomorrow."
     content:  "Gardening is a way of showing that you believe in tomorrow encapsulates the optimism, patience, and nurturing spirit inherent in cultivating a garden. It underscores the profound connection between gardening and faith in the future, affirming that through caring for plants, individuals express their hope for growth, renewal, and the beauty yet to come,"
     images: 
-      - "/images/G15 new.jpg"
+      - "/images/G2.jpg"
     button:
       # enable: true
       # label: Check it out
@@ -60,7 +60,7 @@ services:
 
 
     images:
-      - "/images/G5 new.jpg"
+      - "/images/G3.jpg"
       # - "/images/service-slide-2.png"
       # - "/images/service-slide-3.png"
     button:
@@ -71,7 +71,7 @@ services:
   - title: "Garden is a friend you can visit anytime."
     content:  "Garden is a friend you can visit anytime captures the enduring companionship, beauty, and therapeutic benefits that gardens offer. It highlights the profound relationship between humans and nature, emphasizing the garden's role not just as a place of cultivation, but as a source of emotional well-being, inspiration, and connection to the natural world."
     images:
-      - "/images/G1 new.jpg"
+      - "/images/G1.jpg"
       # - "/images/service-slide-2.png"
       # - "/images/service-slide-3.png"
     button:
