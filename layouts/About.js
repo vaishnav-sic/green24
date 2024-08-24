@@ -11,8 +11,8 @@ import GalleryImage6 from "../public/images/gallery6.jpg";
 import GalleryImage7 from "../public/images/gallery7.jpg";
 import GalleryImage8 from "../public/images/gallery8.jpg";
 import GalleryImage9 from "../public/images/gallery9.jpg";
-import ArticleImage from "../public/images/article2.jpg"; // Add this line to import the image
-import AdditionalImage from "../public/images/art3.png"; // Add this line to import the image
+import ArticleImage from "../public/images/article2.jpg"; 
+import AdditionalImage from "../public/images/art3.png";
 
 const ContactHeader = () => {
   return (
@@ -26,9 +26,8 @@ function About({ data }) {
   const { frontmatter } = data;
   const { title, intro, intro_image, section_items, feature } = frontmatter;
 
-  console.log("Data received: ", data); // Debugging: Check if data is received correctly
+  console.log("Data received: ", data);
 
-  // Intro Section
   const IntroSection = () => (
     <div className="mb-12 flex flex-wrap items-center rounded-lg p-6 shadow-lg">
       <div className="mb-8 w-full px-4 md:mb-0 md:w-1/2">
@@ -44,7 +43,6 @@ function About({ data }) {
     </div>
   );
 
-  // Card Section
   const CardSection = () => (
     <section className="section mx-0 w-full bg-theme-light bg-cover">
       <div className="container">
@@ -77,7 +75,6 @@ function About({ data }) {
     </section>
   );
 
-  // Gallery Section
   const GallerySection = () => {
     const images = [
       GalleryImage1,
@@ -124,7 +121,7 @@ function About({ data }) {
           .gallery-img-wrapper {
             position: relative;
             width: 100%;
-            padding-bottom: 75%; /* Adjust this to get the desired aspect ratio */
+            padding-bottom: 75%; 
             overflow: hidden;
             border-radius: 0.5rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -147,34 +144,30 @@ function About({ data }) {
       <ContactHeader />
       <section className="section">
         <div className="container mx-auto">
-          {/* {markdownify(title, "h1", "text-center font-normal mb-8")} */}
           {intro && intro_image && <IntroSection />}
           {section_items && section_items.length > 0 && <CardSection />}
           <GallerySection />
-          <div className="mt-12 flex flex-col items-center rounded-lg p-6 shadow-lg md:flex-row">
+<div className="mt-12 flex flex-col items-center rounded-lg p-6 shadow-lg md:flex-row bg-gray-100">
             <div className="w-full px-4 md:w-1/3">
-              <div className="flex flex-col space-y-4">
+              <div className="flex flex-row space-y-4">
                 <Image
-                  src={ArticleImage} // The first image to be displayed near the article
+                  src={ArticleImage}
                   alt="Article"
-                  width={400} // Set the desired width
-                  height={100} // Set the desired height
+                  width={400}
+                  height={100}
                   className="w-full rounded-lg shadow-md"
                 />
                 <Image
-                  src={AdditionalImage} // The second image to be displayed near the article
+                  src={AdditionalImage}
                   alt="Additional"
-                  width={400} // Set the desired width
-                  height={100} // Set the desired height
+                  width={400}
+                  height={100}
                   className="w-full rounded-lg shadow-md"
                 />
               </div>
             </div>
-            <div className="w-full px-4 text-lg text-gray-600 md:w-2/3 ">
-              {/* Marathi अग्रलेख */}
+            <div className="w-full px-4 text-lg text-gray-600 md:w-2/3 mt-4 md:mt-0">
               <div className="space-y-6">
-                {" "}
-                {/* Add this div to control the spacing */}
                 <p>
                   ग्रीन24, आम्ही तुमच्या बाह्य जागांना समृद्ध, जीवनसत्त्वांनी
                   परिपूर्ण बागांमध्ये रूपांतर करण्यासाठी समर्पित आहोत. बागायती
@@ -198,7 +191,7 @@ function About({ data }) {
                   माझ्याकडे शिक्षणासोबत अनुभवाची सुद्धा जोड आहे..उत्कृष्ट काम
                   केल्यामुळे कर्मवीर भाऊराव पाटील कॉलेज यांनी सन्मानचिन्ह देऊन
                   मला सन्मानित केले आहे.. व्यवसाय करत असताना पैशा सोबत गार्डन
-                  मध्ये काम करण्याचा सुद्धा आनंद मिळतो...
+                  मध्ये काम करण्याचा सुद्धा आनंद मिळतो.
                   <br />
                   <br />I am Dr. Sandip Shinde, an experienced Agriculturist and
                   Gardening Specialist with a deep-rooted passion for
