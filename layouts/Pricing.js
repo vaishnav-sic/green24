@@ -53,6 +53,9 @@ function Pricing({ data }) {
   return (
     <>
       <PricingHeader />
+      <h1 className="text-4xl font-bold leading-tight text-primary mb-12 text-center">
+          Charges Of Maintenance & Services
+      </h1>
       <style jsx>{`
         @keyframes fadeInUp {
           0% {
@@ -244,7 +247,7 @@ function Pricing({ data }) {
                     Vertical Garden- With Material
                   </td>
                   <td className="text-animate border bg-green-500 px-4 py-2 text-white">
-                    800 Rs.
+                    1200 Rs.
                   </td>
                   <td className="text-animate border bg-green-500 px-4 py-2 text-white">
                     1 Square Feet.
