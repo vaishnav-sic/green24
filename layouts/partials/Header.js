@@ -1,49 +1,42 @@
 import Logo from "@components/Logo";
-// import Logo1 from "@components/Logo1";
 import config from "@config/config.json";
 import menu from "@config/menu.json";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import Image from "next/image";
+import Social from "@components/Social";
+import social from "@config/social.json";
 
 const Header = () => {
-  //router
   const router = useRouter();
-
-  // distructuring the main menu from menu object
   const { main } = menu;
-
-  // states declaration
   const [navOpen, setNavOpen] = useState(false);
-
-  // logo source
   const { logo } = config.site;
   const { enable, label, link } = config.nav_button;
 
   return (
     <header className="header">
       <nav className="navbar container">
-        {/* logo */}
+        {/* Logo */}
         <div className="order-0">
-          {/* <Logo src={logo} /> */}
           <Image
-                src={config.site.logo1}
-                width={config.site.logo1_width}
-                height={config.site.logo1_height}
-                alt=""
-              />
+            src={config.site.logo1}
+            width={config.site.logo1_width}
+            height={config.site.logo1_height}
+            alt="Logo"
+          />
         </div>
 
-        {/* navbar toggler */}
+        {/* Navbar toggler */}
         <button
           id="show-button"
-          className="order-2 flex cursor-pointer items-center md:hidden md:order-1"
+          className="order-2 flex cursor-pointer items-center md:order-1 md:hidden"
           onClick={() => setNavOpen(!navOpen)}
         >
           {navOpen ? (
             <svg className="h-6 fill-current" viewBox="0 0 20 20">
-              <title>Menu Open</title>
+              <title>Menu Close</title>
               <polygon
                 points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
                 transform="rotate(45 10 10)"
@@ -51,7 +44,7 @@ const Header = () => {
             </svg>
           ) : (
             <svg className="h-6 fill-current" viewBox="0 0 20 20">
-              <title>Menu Close</title>
+              <title>Menu Open</title>
               <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
             </svg>
           )}
@@ -60,18 +53,21 @@ const Header = () => {
         {/* Menu */}
         <div
           id="nav-menu"
-          className={`order-3 md:order-1 ${
-            navOpen ? "max-h-[1000px]" : "max-h-0"
+          className={`order-3 w-full md:order-1 md:flex md:w-auto lg:space-x-2 ${
+            navOpen ? "block" : "hidden"
           }`}
         >
-          <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
+          <ul className="navbar-nav flex flex-col md:flex-row md:space-x-2">
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
                 {menu.hasChildren ? (
                   <li className="nav-item nav-dropdown group relative">
                     <span className="nav-link inline-flex items-center">
                       {menu.name}
-                      <svg className="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                      <svg
+                        className="ml-1 h-4 w-4 fill-current"
+                        viewBox="0 0 20 20"
+                      >
                         <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                       </svg>
                     </span>
@@ -106,21 +102,26 @@ const Header = () => {
             {enable && (
               <li className="md:hidden">
                 <Link
-                  className="btn btn-primary z-0 py-[14px]"
+                  className="btn btn-primary z-0 block py-[14px]"
                   href={link}
                   rel=""
                 >
                   {label}
                 </Link>
+                {/* Social icons below the Contact Us button in mobile view */}
+                <Social source={social} className="social-icons mt-4" />
               </li>
             )}
           </ul>
         </div>
+
+        {/* Desktop Social Icons and Button */}
         {enable && (
-          <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
+          <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:order-2 md:ml-0 md:flex">
             <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="">
               {label}
             </Link>
+            <Social source={social} className="social-icons mb-8 ml-4" />
           </div>
         )}
       </nav>
