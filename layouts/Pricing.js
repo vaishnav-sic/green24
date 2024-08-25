@@ -53,7 +53,7 @@ function Pricing({ data }) {
   return (
     <>
       <PricingHeader />
-      <h1 className="text-4xl font-bold leading-tight text-primary mb-12 text-center">
+      <h1 className="text-4xl font-bold leading-tight mt-8 text-primary mb-12 text-center">
           Charges Of Maintenance & Services
       </h1>
       <style jsx>{`
@@ -78,7 +78,7 @@ function Pricing({ data }) {
           animation: fadeInUp 2s ease-in-out forwards;
         }
       `}</style>
-      <section className="section pb-0">
+      <section className="section pb-0 pt-0">
         <div className="container">
           <div className="section row -mt-10 justify-center md:mt-0">
             {plans.map((plan, index) => (
