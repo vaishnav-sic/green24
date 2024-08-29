@@ -12,17 +12,8 @@ import GalleryImage9 from "../../public/images/gallery9.jpg";
 // ContactHeader component
 const GalleryHeader = () => {
   return (
-    <div
-      className="relative z-10 mt-12  bg-cover bg-center py-6 text-center"
-      style={{
-        backgroundImage: "url('/images/naturebg.jpg')",
-        marginTop: "100px",
-        height: "250px",
-      }}
-    >
-      <h1 className="absolute bottom-6 left-1/2 -translate-x-1/2 transform text-5xl font-bold leading-tight text-primary">
-        Gallery
-      </h1>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/Headerbg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold text-primary">Gallery</h1>
     </div>
   );
 };
