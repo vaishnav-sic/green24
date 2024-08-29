@@ -4,8 +4,8 @@ import { markdownify } from "@lib/utils/textConverter";
 
 const ContactHeader = () => {
   return (
-    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/naturebg.jpg')", marginTop: '100px', height: '250px' }}>
-      <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2">Contact Us</h1>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/Headerbg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold text-primary">Contact Us</h1>
     </div>
   );
 };
