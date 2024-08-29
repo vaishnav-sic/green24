@@ -159,8 +159,8 @@ const Home = ({ frontmatter }) => {
         <div>
           <div className="bg-green-900">
             <div className="text-center text-white py-16 text-animate">
-              <h1 className="text-3xl font-bold text-white">Why Green 24 ?</h1>
-              <p className="mt-4">Quality is our priority, Gardening is our Passion</p>
+            <h1 className="text-3xl font-bold text-white">Why Green 24 ?</h1>
+            <p className="mt-4">Quality is our priority, Gardening is our Passion</p>
             </div>
           </div>
           <div className="relative">
@@ -168,8 +168,8 @@ const Home = ({ frontmatter }) => {
             <div className="relative max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-0">
               <div className="bg-white text-black p-8 flex flex-col justify-between h-[330px] w-full text-animate">
                 <div>
-                  <h2 className="text-2xl font-bold mb-2">Garden is a friend you can visit anytime.</h2>
-                  <p>It highlights the profound relationship between humans and nature, emphasizing the garden not just as a place of cultivation, but as a source of emotional well-being, inspiration, and connection to the natural world.</p>
+                <h2 className="text-2xl font-bold mb-2">Garden is a friend you can visit anytime.</h2>
+                <p>It highlights the profound relationship between humans and nature, emphasizing the garden not just as a place of cultivation, but as a source of emotional well-being, inspiration, and connection to the natural world.</p>
                 </div>
               </div>
               <div className="flex justify-center items-center h-[330px] w-full">

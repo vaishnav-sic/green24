@@ -12,7 +12,7 @@ import GalleryImage9 from "../../public/images/gallery9.jpg";
 // ContactHeader component
 const GalleryHeader = () => {
   return (
-    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/HeaderBg.jpg')", marginTop: '100px', height: '250px' }}>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/Headerbg.jpg')", marginTop: '100px', height: '250px' }}>
       <h1 className="text-5xl font-bold text-primary">Gallery</h1>
     </div>
   );
@@ -25,9 +25,10 @@ const CardComponent = ({ image, heading, paragraph, imagesBelow }) => (
       <Image
         src={image}
         alt="Gallery"
-        className="h-auto w-full rounded-lg shadow-md"
+        className="rounded-lg shadow-md"
         width={600}
-        height={400}
+        height={100}
+        objectFit="cover" // Ensure the image covers the area
       />
     </div>
     <div className="flex w-full flex-col items-center px-4 md:w-1/2">
@@ -69,33 +70,33 @@ const GallerySection = () => {
 
   return (
     <section>
-      <div className="container mx-auto px-5 py-24">
-        <div className="mb-20 flex w-full flex-col text-center">
-          <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-indigo-500">
-            OUR GALLERY
-          </h2>
-          <h1 className="title-font text-2xl font-medium text-gray-900 sm:text-3xl">
-            Check out our work
-          </h1>
-        </div>
-        <div className="-m-1 flex flex-wrap md:-m-2">
-          {images.map((image, index) => (
-            <div key={index} className="flex w-1/3 flex-wrap">
-              <div className="w-full p-1 md:p-2">
-                <div className="gallery-img-wrapper">
-                  <Image
-                    alt={`gallery image ${index + 1}`}
-                    src={image}
-                    layout="fill"
-                    objectFit="cover"
-                    className="gallery-img"
-                  />
+      <div className="container mx-auto rounded-lg p-6 px-5 py-24 shadow-lg">
+          <div className="mb-20 flex w-full flex-col text-center">
+            <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-indigo-500">
+              OUR GALLERY
+            </h2>
+            <h1 className="title-font text-2xl font-medium text-gray-900 sm:text-3xl">
+              Check out our work
+            </h1>
+          </div>
+          <div className="-m-1 flex flex-wrap md:-m-2">
+            {images.map((image, index) => (
+              <div key={index} className="w-full p-1 sm:w-1/2 md:w-1/3 md:p-2">
+                <div className="w-full p-1 md:p-2">
+                  <div className="gallery-img-wrapper">
+                    <Image
+                      alt="gallery"
+                      src={image}
+                      layout="fill"
+                      objectFit="cover"
+                      className="gallery-img"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
       <style jsx>{`
         .gallery-img-wrapper {
           position: relative;
@@ -105,6 +106,7 @@ const GallerySection = () => {
           border-radius: 0.5rem;
           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+        
 
         .gallery-img {
           position: absolute;
@@ -121,49 +123,47 @@ const GallerySection = () => {
 // Posts component
 const Posts = () => {
   return (
-    <>
+    <div>
       <GalleryHeader />
-      <div>
-        <div className="section row pb-0">
-          {/* <div className="col-12 pb-12 lg:pb-24">
-            <div className="row items-center">
-              <div className="col-12 md:col-6">
-                <h2 className="h3 mb-2 mt-4">
-                  <a href="/some-post-link" className="block hover:text-primary">
-                    First Post Title
-                  </a>
-                </h2>
-                <p className="text-text">
-                  This is a brief summary of the first post.
-                </p>
-              </div>
+      <div className="section row pb-0">
+        {/* <div className="col-12 pb-12 lg:pb-24">
+          <div className="row items-center">
+            <div className="col-12 md:col-6">
+              <h2 className="h3 mb-2 mt-4">
+                <a href="/some-post-link" className="block hover:text-primary">
+                  First Post Title
+                </a>
+              </h2>
+              <p className="text-text">
+                This is a brief summary of the first post.
+              </p>
             </div>
-          </div> */}
+          </div>
+        </div> */}
 
-          <CardComponent
-            image={GalleryImage1}
-            heading="Beautiful Showcase"
-            paragraph="Welcome to our gallery! Explore the beautiful images that showcase our work and creativity. Each picture tells a story, reflecting the essence of our dedication and passion."
-            imagesBelow={[GalleryImage2, GalleryImage3, GalleryImage4]}
-          />
+        <CardComponent
+          image={GalleryImage1}
+          heading="Lawn Care"
+          paragraph="Welcome to our gallery! Explore the beautiful images that showcase our work and creativity. Each picture tells a story, reflecting the essence of our dedication and passion."
+          imagesBelow={[GalleryImage2, GalleryImage3, GalleryImage4]}
+        />
 
-          <CardComponent
-            image={GalleryImage5}
-            heading="Our Journey Highlights"
-            paragraph="Our gallery captures the highlights of our journey, each image illustrating our commitment to excellence and our love for what we do."
-            imagesBelow={[GalleryImage6, GalleryImage7, GalleryImage8]}
-          />
+        <CardComponent
+          image={GalleryImage5}
+          heading="Pest & Disease Control"
+          paragraph="Our gallery captures the highlights of our journey, each image illustrating our commitment to excellence and our love for what we do."
+          imagesBelow={[GalleryImage6, GalleryImage7, GalleryImage8]}
+        />
 
-          <CardComponent
-            image={GalleryImage9}
-            heading="Moments and Memories"
-            paragraph="Dive into our collection of moments and memories, showcasing the artistry and hard work that define our projects."
-            imagesBelow={[GalleryImage1, GalleryImage2, GalleryImage3]}
-          />
-        </div>
-        <GallerySection />
+        <CardComponent
+          image={GalleryImage9}
+          heading="Garden Cleanup"
+          paragraph="Dive into our collection of moments and memories, showcasing the artistry and hard work that define our projects."
+          imagesBelow={[GalleryImage1, GalleryImage2, GalleryImage3]}
+        />
       </div>
-    </>
+      <GallerySection />
+    </div>
   );
 };
 

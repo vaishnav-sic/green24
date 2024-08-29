@@ -4,15 +4,8 @@ import { useEffect } from "react";
 
 const PricingHeader = () => {
   return (
-    <div
-      className="relative z-10 mt-12 bg-cover bg-center py-6 text-center"
-      style={{
-        backgroundImage: "url('/images/HeaderBg.jpg')",
-        marginTop: "100px",
-        height: "250px",
-      }}
-    >
-      <h1 className="text-animate text-5xl font-bold text-primary">Pricing</h1>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/Headerbg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold text-primary">Pricing</h1>
     </div>
   );
 };

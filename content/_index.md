@@ -15,7 +15,7 @@ feature:
   features:
   - name: "High Quality Plants"
     icon: "/images/high quality.png"
-    content: "Nurseries ensure plants are healthy,well-rooted and ready to thrive in new environments"
+    content: "Nurseries ensure plants are healthy, well-rooted and ready to thrive in new environments"
   - name: "Expert Knowledge"
     icon: "/images/expert.png"
     content: "Staff at nurseries are knowledgeable about plant care, growth requirements, and best practices for different species"
