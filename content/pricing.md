@@ -13,6 +13,7 @@ plans:
     - Fungicide as per requirement
     - Treaning
     - Full Treatment
+    - For Big Garden 1₹/Sq.ft.
   button:
     label: Get started
     link: "/contact"
@@ -28,6 +29,7 @@ plans:
     - Fungicide as per requirement
     - Treaning
     - Full Treatment of Plants & Garden
+    - For Big Garden 1.5₹/Sq.ft.
   button:
     label: Get started
     link: "/contact"
@@ -42,6 +44,7 @@ plans:
     - Fungicide as per requirement
     - Treaning
     - Full Treatment
+    - For Big Garden 3₹/Sq.ft.
   button:
     label: Get started
     link: "/contact"
