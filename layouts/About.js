@@ -2,22 +2,13 @@ import React from "react";
 import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import BgImage from "../public/images/11.jpg";
-import GalleryImage1 from "../public/images/gallery1.jpg";
-import GalleryImage2 from "../public/images/gallery2.jpg";
-import GalleryImage3 from "../public/images/gallery3.jpg";
-import GalleryImage4 from "../public/images/gallery4.jpg";
-import GalleryImage5 from "../public/images/gallery5.jpg";
-import GalleryImage6 from "../public/images/gallery6.jpg";
-import GalleryImage7 from "../public/images/gallery7.jpg";
-import GalleryImage8 from "../public/images/gallery8.jpg";
-import GalleryImage9 from "../public/images/gallery9.jpg";
-import ArticleImage from "../public/images/article2.jpg"; 
-import AdditionalImage from "../public/images/art3.png";
+import ArticleImage from "../public/images/article2.jpg"; // Add this line to import the image
+import AdditionalImage from "../public/images/art3.png"; // Add this line to import the image
 
-const ContactHeader = () => {
+const AboutHeader = () => {
   return (
-    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/naturebg.jpg')", marginTop: '100px', height: '250px' }}>
-      <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2">About Us</h1>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/Headerbg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold text-primary">About Us</h1>
     </div>
   );
 };
@@ -25,8 +16,6 @@ const ContactHeader = () => {
 function About({ data }) {
   const { frontmatter } = data;
   const { title, intro, intro_image, section_items, feature } = frontmatter;
-
-  console.log("Data received: ", data);
 
   const IntroSection = () => (
     <div className="mb-12 flex flex-wrap items-center rounded-lg p-6 shadow-lg">
@@ -43,113 +32,14 @@ function About({ data }) {
     </div>
   );
 
-  const CardSection = () => (
-    <section className="section mx-0 w-full bg-theme-light bg-cover">
-      <div className="container">
-        <div className="text-center">
-          <h2>{markdownify(feature.title)}</h2>
-        </div>
-        <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-          {feature.features.map((item, i) => (
-            <div
-              className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
-              key={`feature-${i}`}
-            >
-              {item.icon && (
-                <Image
-                  className="mx-auto"
-                  src={item.icon}
-                  width={30}
-                  height={30}
-                  alt=""
-                />
-              )}
-              <div className="mt-4">
-                {markdownify(item.name, "h3", "h5")}
-                <p className="mt-3">{item.content}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-
-  const GallerySection = () => {
-    const images = [
-      GalleryImage1,
-      GalleryImage2,
-      GalleryImage3,
-      GalleryImage4,
-      GalleryImage5,
-      GalleryImage6,
-      GalleryImage7,
-      GalleryImage8,
-      GalleryImage9,
-    ];
-
-    return (
-      <section>
-        <div className="container mx-auto rounded-lg p-6 px-5 py-24 shadow-lg">
-          <div className="mb-20 flex w-full flex-col text-center">
-            <h2 className="title-font mb-1 text-xs font-medium tracking-widest text-indigo-500">
-              OUR GALLERY
-            </h2>
-            <h1 className="title-font text-2xl font-medium text-gray-900 sm:text-3xl">
-              Check out our work
-            </h1>
-          </div>
-          <div className="-m-1 flex flex-wrap md:-m-2">
-            {images.map((image, index) => (
-              <div key={index} className="w-full p-1 sm:w-1/2 md:w-1/3 md:p-2">
-                <div className="w-full p-1 md:p-2">
-                  <div className="gallery-img-wrapper">
-                    <Image
-                      alt="gallery"
-                      src={image}
-                      layout="fill"
-                      objectFit="cover"
-                      className="gallery-img"
-                    />
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        <style jsx>{`
-          .gallery-img-wrapper {
-            position: relative;
-            width: 100%;
-            padding-bottom: 75%; 
-            overflow: hidden;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-          }
-
-          .gallery-img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-          }
-        `}</style>
-      </section>
-    );
-  };
-
   return (
     <>
-      <ContactHeader />
+      <AboutHeader />
       <section className="section">
         <div className="container mx-auto">
-          {intro && intro_image && <IntroSection />}
-          {section_items && section_items.length > 0 && <CardSection />}
-          <GallerySection />
-<div className="mt-12 flex flex-col items-center rounded-lg p-6 shadow-lg md:flex-row bg-gray-100">
+          <div className="mt-12 flex flex-col items-center rounded-lg p-6 shadow-lg md:flex-row bg-green-100">
             <div className="w-full px-4 md:w-1/3">
-              <div className="flex flex-row space-y-4">
+              <div className="flex flex-col space-y-4">
                 <Image
                   src={ArticleImage}
                   alt="Article"
@@ -192,7 +82,7 @@ function About({ data }) {
                   केल्यामुळे कर्मवीर भाऊराव पाटील कॉलेज यांनी सन्मानचिन्ह देऊन
                   मला सन्मानित केले आहे.. व्यवसाय करत असताना पैशा सोबत गार्डन
                   मध्ये काम करण्याचा सुद्धा आनंद मिळतो.
-                  <br />
+                  <br /><br />
                   <br />I am Dr. Sandip Shinde, an experienced Agriculturist and
                   Gardening Specialist with a deep-rooted passion for
                   agriculture and horticulture. Growing up in a family of
@@ -222,6 +112,7 @@ function About({ data }) {
               </div>
             </div>
           </div>
+          {intro && intro_image && <IntroSection />}
         </div>
       </section>
     </>
