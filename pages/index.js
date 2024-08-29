@@ -15,11 +15,16 @@ const Home = ({ frontmatter }) => {
 
   const ContactHeader = () => {
     return (
-      <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/bg (2).jpg')", marginTop: '50px', height: '250px' }}>
-        <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2" style={{bottom: '50%', left: '50%', transform: 'translate(-50%, 50%)', }}>"Gardens are where we find peace and beauty"</h1>
+      <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/HeaderBg.jpg')", marginTop: '50px', height: '250px' }}>
+        {/* <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2" style={{bottom: '50%', left: '50%', transform: 'translate(-50%, 50%)', }}>"Gardens are where we find peace and beauty"</h1> */}
+        <h1 className="text-5xl font-bold text-primary">Gardens are where we find<br/> peace and beauty</h1>
       </div>
     );
   };  
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   useEffect(() => {
     const elements = document.querySelectorAll('.text-animate');
@@ -80,7 +85,7 @@ const Home = ({ frontmatter }) => {
             height: '700px' 
           }}
         >
-          <div className="whatsapp-icon" style={{position:"fixed", right:"20px", bottom:"20px", zIndex:"10000"}}>
+          <div className="whatsapp-icon" style={{position:"fixed", right:"20px", bottom:"80px", zIndex:"10000"}}>
             <a
               href="https://api.whatsapp.com/send?phone=919921055678"
               target="_blank"
@@ -120,7 +125,7 @@ const Home = ({ frontmatter }) => {
         </section>
 
         {/* Features */}
-        <section className="section bg-theme-light">
+        <section className="section bg-green-300">
           <div className="container">
             <div className="text-center">
               <h2 className="text-animate">{markdownify(feature.title)}</h2>
@@ -154,8 +159,8 @@ const Home = ({ frontmatter }) => {
         <div>
           <div className="bg-green-900">
             <div className="text-center text-white py-16 text-animate">
-              <h1 className="text-3xl font-bold text-white">What's New in Nature</h1>
-              <p className="mt-4">Recent updates, immersive stories, and relevant explainer articles from around The Nature Conservancy.</p>
+            <h1 className="text-3xl font-bold text-white">Why Green 24 ?</h1>
+            <p className="mt-4">Quality is our priority, Gardening is our Passion</p>
             </div>
           </div>
           <div className="relative">
@@ -163,8 +168,8 @@ const Home = ({ frontmatter }) => {
             <div className="relative max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-0">
               <div className="bg-white text-black p-8 flex flex-col justify-between h-[330px] w-full text-animate">
                 <div>
-                  <h2 className="text-2xl font-bold mb-2">Gardening is the art that uses flowers and plants as paint, and the soil and sky as canvas.</h2>
-                  <p>Flowers and plants as paint suggests that gardeners carefully select and arrange plants much like an artist chooses colors to create a painting. Soil and sky as canvas emphasizes the importance of the natural environment in which gardens thrive.</p>
+                <h2 className="text-2xl font-bold mb-2">Garden is a friend you can visit anytime.</h2>
+                <p>It highlights the profound relationship between humans and nature, emphasizing the garden not just as a place of cultivation, but as a source of emotional well-being, inspiration, and connection to the natural world.</p>
                 </div>
               </div>
               <div className="flex justify-center items-center h-[330px] w-full">
@@ -175,7 +180,7 @@ const Home = ({ frontmatter }) => {
           <div className="bg-white ">
             <div className="max-w-6xl mx-auto px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-0">
               <div className="flex justify-center items-center h-[330px] w-full">
-                <img src="/images/G5 new.jpg" alt="Bird's Head" className="w-full h-full object-cover" />
+                <img src="/images/G3.jpg" alt="Bird's Head" className="w-full h-full object-cover" />
               </div>
               <div className="bg-white text-black p-8 flex flex-col justify-between h-[330px] w-full text-animate">
                 <div>
@@ -187,7 +192,9 @@ const Home = ({ frontmatter }) => {
           </div>
         </div>
         <ContactHeader />
-
+        <button className="fixed bottom-5 right-5 w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white text-2xl shadow-lg hover:bg-green-700 focus:outline-none" onClick={scrollToTop}>
+          🪴
+        </button>
         {/* workflow */}
         {/* <section className="section pb-0">
           <div className="mb-8 text-center">

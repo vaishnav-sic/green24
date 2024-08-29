@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Cta from "./components/Cta";
 
-const ContactHeader = () => {
+const PricingHeader = () => {
   return (
-    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/naturebg.jpg')", marginTop: '100px', height: '250px' }}>
-      <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2">Pricing</h1>
+    <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "url('/images/Headerbg.jpg')", marginTop: '100px', height: '250px' }}>
+      <h1 className="text-5xl font-bold text-primary">Pricing</h1>
     </div>
   );
 };
@@ -15,7 +15,7 @@ function Pricing({ data }) {
   } = data;
   return (
     <>
-    <ContactHeader />
+    <PricingHeader />
       <section className="section pb-0">
         <div className="container">
           {/* <h1 className="text-center font-normal">{title}</h1> */}

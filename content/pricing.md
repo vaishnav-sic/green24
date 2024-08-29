@@ -48,7 +48,7 @@ plans:
 
 call_to_action:
   title: Need a customized plan?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  content: Let us help you create a solution tailored to your specific needs.
   image: '/images/cta.svg'
   button:
     enable: true
