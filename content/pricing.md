@@ -8,10 +8,11 @@ plans:
   price: 3500
   type: month
   features:
+    - (Max 50 Plants/Pot)
     - Required Fertilizers
     - Required Pesticides
     - Fungicide as per requirement
-    - Treaning
+    - Trimming
     - Full Treatment
     - For Big Garden 1₹/Sq.ft.
   button:
@@ -24,10 +25,11 @@ plans:
   type: month
   recommended: true
   features:
+    - (Max 50 Plants/Pot)
     - Required Fertilizers
     - Required Pesticides
     - Fungicide as per requirement
-    - Treaning
+    - Trimming
     - Full Treatment of Plants & Garden
     - For Big Garden 1.5₹/Sq.ft.
   button:
@@ -39,10 +41,11 @@ plans:
   price: 9000
   type: month
   features:
+    - (Max 50 Plants/Pot)
     - Required Fertilizers
     - Required Pesticides
     - Fungicide as per requirement
-    - Treaning
+    - Trimming
     - Full Treatment
     - For Big Garden 3₹/Sq.ft.
   button:

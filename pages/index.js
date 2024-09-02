@@ -15,7 +15,7 @@ const Home = ({ frontmatter }) => {
 
   const ContactHeader = () => {
     return (
-      <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/HeaderBg.jpg')", marginTop: '50px', height: '250px' }}>
+      <div className="bg-cover bg-center text-center  relative z-10 py-6 mt-12" style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/Headerbg.jpg')", marginTop: '50px', height: '250px' }}>
         {/* <h1 className="text-5xl font-bold leading-tight text-primary absolute bottom-6 left-1/2 transform -translate-x-1/2" style={{bottom: '50%', left: '50%', transform: 'translate(-50%, 50%)', }}>"Gardens are where we find peace and beauty"</h1> */}
         <h1 className="text-5xl font-bold text-primary">Gardens are where we find<br/> peace and beauty</h1>
       </div>

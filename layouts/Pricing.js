@@ -285,7 +285,7 @@ function Pricing({ data }) {
               All Maintenance Charge Will Be Change As Per Quantity.
             </p>
             <p className="text-center text-xl font-bold text-white">
-              Note: This All Charges Are Without Material.
+              Note: This All Charges Are Without Material. Exact service charges will be quoted after site visit.
             </p>
             <p className="pb-6 text-center text-xl font-bold text-orange-400">
               For Plantation Required Minimum More Than 100 Plants

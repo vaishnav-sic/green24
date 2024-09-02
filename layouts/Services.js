@@ -7,7 +7,7 @@ const ServiceHeader = () => {
     <div
       className="relative z-10 mt-12 bg-cover bg-center py-6 text-center"
       style={{
-        backgroundImage: "url('/images/HeaderBg.jpg')",
+        backgroundImage: "url('/images/Headerbg.jpg')",
         marginTop: "100px",
         height: "250px",
       }}
