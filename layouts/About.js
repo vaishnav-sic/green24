@@ -3,7 +3,7 @@ import { markdownify } from "@lib/utils/textConverter";
 import Image from "next/image";
 import BgImage from "../public/images/11.jpg";
 import ArticleImage from "../public/images/article2.jpg"; // Add this line to import the image
-import AdditionalImage from "../public/images/art3.png"; // Add this line to import the image
+import AdditionalImage from "../public/images/art3.jpg"; // Add this line to import the image
 
 const AboutHeader = () => {
   return (
