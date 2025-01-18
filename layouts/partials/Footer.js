@@ -49,7 +49,7 @@ const Footer = () => {
         <div className="border-t border-border py-6 bg-cover" style={{ display: "flex", justifyContent: "center", alignItems: "center", background:"white", color:"black" }}>
           {/* {markdownify(copyright, "p", "text-sm text-center")} */}
           <p className="site-footer__copy" style={{ display: "flex", alignItems: "center", margin: "0", fontSize: "20px" }}>
-            &copy; सर्वहक्कस्वाधीन २०२४ &nbsp;&nbsp;{" "}
+            &copy; सर्वहक्कस्वाधीन २०२५ &nbsp;&nbsp;{" "}
               <a href="https://www.swasamvedya.com/" target="_blank">
                 <img src="/images/SIC_LogoName.svg" alt="Logo"  style={{height:"55px", width:"200px"}}/>
               </ a>
